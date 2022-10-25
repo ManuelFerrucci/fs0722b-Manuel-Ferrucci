@@ -1,0 +1,39 @@
+.logo-epicode {
+    width: 200px;
+    padding-left: 30px;
+}
+
+header p {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+table {
+    width: 20%;
+}
+
+table td, table tr {
+    border: 1px solid #000
+}
+
+li a {
+    text-decoration: none;
+}
+
+iframe {
+    width: 500px;
+    height: 300px;
+}
+
+.section1, .section2, .section3, .section4 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.section4 ul {
+    list-style-type: none;
+    padding-left: 0;
+}
