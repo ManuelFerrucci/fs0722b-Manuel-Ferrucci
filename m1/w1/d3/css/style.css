@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    font-size: 16px;
+}
+
+body {
+    height: 200vh;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(211, 153, 44);
+}
+
+#logo{
+    width: 200px;
+  
+}
+
+.sotto-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    background-color: rgb(255 217 217);
+}
+
+.sotto-logo span{
+    font-weight: 700;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h1-text{
+    padding-top: 100px;
+    font-weight: 700;
+}
+
+figure{
+    margin-left: 0;
+}
+
+#foto-featured{
+    padding-right: 400px;
+}
+
+#foto-focaccia{
+    width: 280px;
+    margin: 0;
+}
+
+.didascalia{
+    color: grey;
+    font-style: italic;
+}
+
+.featured{
+    margin: 0;
+    font-weight: 700;
+    color: red;
+}
+
+.link-featured{
+    margin-top: 0;
+}
+
+#featured{
+    padding-left: 20px;
+    border-left: 1px solid red;
+    margin-top: 50px;
+}
+
+.h2-ingredients{
+    border-bottom: 2px solid lightblue;
+}
+
+.h2-method{
+
+    border-bottom: 2px solid lightblue;
+}
+
+.lorem{
+    padding-bottom: 30px;
+    border-bottom: 2px solid lightblue;
+    word-wrap: none;
+}
+
+footer{
+    padding-bottom: 10px;
+    text-align: center;
+}
