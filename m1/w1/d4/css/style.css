@@ -1,0 +1,280 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(../assets/sfondo.png);
+}
+
+/* HEADER */
+
+.logo-epicode{
+    width: 260px;
+    padding-top: 40px;
+}
+
+#container-header{
+    background-color: #008699;
+    margin-left: 10px;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px;
+    text-align: center;
+}
+
+#container-header p{
+    color: #ffffff;
+    opacity: 0.95;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 15px;
+    padding-top: 40px;
+}
+
+#container-header li{
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.bottom-logo-home{
+    padding-top: 20px;
+}
+
+.bottom-logo-job{
+    padding-bottom: 40px;
+}
+
+#container-header li::before{
+  content: '\21D2';
+  color: #ffffff;
+  font-size: 25px;
+  padding-right: 5px;
+}
+
+.link-menu-header{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#container-header li::after{
+    content: '\21D0';
+    color: #ffffff;
+    font-size: 25px;
+    padding-left: 5px;
+  }
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+#first-article header p{
+    opacity: 0.5;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#first-article{
+    background-color: white;
+    margin-left: 10px;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px;
+}
+
+#first-article header{
+    padding: 25px 10px 0 20px;
+}
+
+#first-article h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#span-parti-comuni{
+    color: #aa2072;
+}
+
+#le-varie-aree{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#first-article p{
+    margin: 5px 0;
+    padding: 25px 10px 0 20px;
+}
+
+#first-article ul{
+    padding-left: 30px;
+}
+
+#first-article ul li{
+    padding: 7px 0;
+}
+
+#box-li-header{
+    background-color: #dededf;
+    border: 1px solid #9faaa1;
+    border-radius: 5px;
+}
+
+#box-li-main{
+    background-color: #dededf;
+    border: 1px solid #9faaa1;
+    border-radius: 5px;
+}
+
+#box-li-footer{
+    background-color: #dededf;
+    border: 1px solid #9faaa1;
+    border-radius: 5px;
+}
+
+#first-article h2{
+    margin-top: 15px;
+    padding: 25px 10px 0 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#span-selezionare-css{
+    color: #aa2072;
+}
+
+#article-footer a{
+    color: #009bc5;
+}
+
+#article-footer h2{
+    text-align: center;
+}
+
+.article-footer1{
+    padding-bottom: 25px;
+    background-color: #ddeaea;
+    margin-left: 10px;
+    margin: 50px;
+}
+
+.article-footer1 li{
+    list-style-type: none;
+}
+
+.article-footer2{
+    padding-bottom: 25px;
+    background-color: #ddeaea;
+    margin-left: 10px;
+    margin: 50px;
+}
+
+.article-footer2 li{
+    list-style-type: none;
+}
+
+.article-footer3{
+    padding-bottom: 25px;
+    background-color: #ddeaea;
+    margin-left: 10px;
+    margin: 50px;
+}
+
+.article-footer3 li{
+    list-style-type: none;
+}
+
+/* FORM */
+
+#form{
+    padding-bottom: 25px;
+    background-color: #ddeaea;
+    margin-left: 10px;
+    margin: 50px;
+}
+
+#form h2{
+    text-align: center;
+}
+
+.form{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.imput{
+    border: none;
+}
+
+#button{
+    background-color: #3c6ac9;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* TABELLE */
+
+#tabella{
+    padding: 25px 10px 0 20px;
+}
+
+table{
+    text-align: center;
+    border-bottom: 1px solid #3366cc;
+}
+
+caption{
+    font-weight: 700;
+    font-style: italic;
+}
+
+#indici-tabelle{
+    background-color: #4767ba;
+}
+
+#indici-tabelle th{
+    padding: 15px;
+}
+
+th, td{
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+tr{
+    width: 40%;
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+
+#footer{
+    color: #e0eeee;
+    background-color: #005566;
+    margin-left: 10px;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px;
+}
+
+#footer{
+    padding: 25px 10px 20px 20px;
+    text-align: center;
+}
+
+.testata-online{
+    padding-top: 20px;
+}
+
+#footer a{
+    color: #ff00fe;
+}
