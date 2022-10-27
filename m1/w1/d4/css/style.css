@@ -19,7 +19,6 @@ body{
 
 #container-header{
     background-color: #008699;
-    margin-left: 10px;
     margin: 20px;
     border-radius: 3px;
     box-shadow: 1px 1px 10px;
@@ -88,6 +87,11 @@ body{
     box-shadow: 1px 1px 10px;
 }
 
+#mario-rossi{
+    display: flex;
+    align-items: center;
+}
+
 #first-article header{
     padding: 25px 10px 0 20px;
 }
@@ -95,6 +99,7 @@ body{
 #first-article h1{
     font-size: 2rem;
     font-weight: 700;
+    padding: 25px 10px 0 20px;
 }
 
 #span-parti-comuni{
@@ -189,6 +194,24 @@ body{
     list-style-type: none;
 }
 
+.article-footer3{
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.video{
+    height: 200px;
+    margin: 0 15px 0 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px;
+}
+
 /* FORM */
 
 #form{
@@ -223,6 +246,8 @@ body{
 
 #tabella{
     padding: 25px 10px 0 20px;
+    display: flex;
+    justify-content: center;
 }
 
 table{
