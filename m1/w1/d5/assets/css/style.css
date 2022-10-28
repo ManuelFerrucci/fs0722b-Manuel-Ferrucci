@@ -256,6 +256,10 @@ hr{
     width: 60%;
 }
 
+.telefono, .mail, .indicazioni-stradali{
+    color: white;
+}
+
 #copyright{
     margin-top: 40px;
 }
