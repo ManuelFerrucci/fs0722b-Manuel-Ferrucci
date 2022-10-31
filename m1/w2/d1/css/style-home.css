@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    background-image: url(../assets/codici.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container-home{
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.items-home{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.cta-home{
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
