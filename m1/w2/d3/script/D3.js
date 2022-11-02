@@ -177,12 +177,14 @@ if (totalShoppingCart <= 50) {
 
 /*
 
-let cognome = 'Ferrucci';
+let parola = 'Parola';
 
-if (isNaN(cognome) ) {
+if (typeof(cognome) === 'number') {
 
-  console.log(cognome + " non è un numero!");
+  console.log('è un numero!');
   
+} else {
+  console.log('non è un numero')
 }
 
 */
@@ -221,15 +223,15 @@ if (y == 0) {
 
 /*
 
-let val = 3;
+let val = 12;
 
-  if (val < 10) {
-
-      console.log("Meno di 10");
-
-} else if (val < 5) {
+  if (val < 5 && val < 10) {
 
       console.log("Meno di 5");
+
+} else if (val < 10) {
+
+      console.log("Meno di 10");
 
 } else {
 
