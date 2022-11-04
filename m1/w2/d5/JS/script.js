@@ -8,6 +8,11 @@ function numero(dato){
 }
 
  
-function cancellaIlCampo() { 
+function pulisciSchermata() { 
     document.getElementById('operazioni_matematiche').value = '';
+}
+
+
+function dueSegniNo() {
+    document.getElementById('operazioni_matematiche').value = 'ERROR';
 }
