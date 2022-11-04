@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Creazione di una calcolatrice con Javascript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una calcolatrice Stellare</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Una calcolatrice... <span class="stellare">Stellare!</span></h1>
+
+    </header>
+
+    <div id="contenitore-calcolatrice">
+
+        <div class="container-schermata">
+            
+            <input id="operazioni_matematiche" class="schermata" type="text" name="schermata">
+        
+        </div>
+
+        <div id="contenitore-pulsanti">
+
+            <div class="contenitore">
+
+                <input id="7" class="pulsante" type="submit" value="7" onclick="numero(this.id)">
+                <input id="8" class="pulsante" type="submit" value="8" onclick="numero(this.id)">
+                <input id="9" class="pulsante" type="submit" value="9" onclick="numero(this.id)">
+                <input id="/" class="pulsante" type="submit" value="/" onclick="numero(this.id)">
+
+            </div>
+            <div class="contenitore">
+
+                <input id="4" class="pulsante" type="submit" value="4" onclick="numero(this.id)">
+                <input id="5" class="pulsante" type="submit" value="5" onclick="numero(this.id)">
+                <input id="6" class="pulsante" type="submit" value="6" onclick="numero(this.id)">
+                <input id="*" class="pulsante" type="submit" value="x" onclick="numero(this.id)">
+
+            </div>
+
+            <div class="contenitore">
+
+                <input id="1" class="pulsante" type="submit" value="1" onclick="numero(this.id)">
+                <input id="2" class="pulsante" type="submit" value="2" onclick="numero(this.id)">
+                <input id="3" class="pulsante" type="submit" value="3" onclick="numero(this.id)">
+                <input id="-" class="pulsante" type="submit" value="-" onclick="numero(this.id)">
+
+            </div>
+
+            <div class="contenitore">
+
+                <input class="pulsante" type="submit" value="C" onclick="cancellaIlCampo()">
+                <input id="0" class="pulsante" type="submit" value="0" onclick="numero(this.id)">
+                <input id="." class="pulsante" type="submit" value="." onclick="numero(this.id)">
+                <input id="+" class="pulsante" type="submit" value="+" onclick="numero(this.id)">
+
+            </div>
+
+            <div class="contenitore-risultato">
+
+                <button class="risultato" value="=" onclick="operazioneAritmetica()">=</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+
+</body>
+</html>

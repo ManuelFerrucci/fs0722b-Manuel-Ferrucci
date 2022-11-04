@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+}
+
+body{
+    background-image: url("https://sites.google.com/site/sistemasolareonly4u/_/rsrc/1444756931317/home/image.jpeg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: lightblue;
+}
+
+.stellare{
+    font-size: 4rem;
+}
+
+#contenitore-calcolatrice{
+    background-image: url("https://www.cure-naturali.it/.imaging/default/dam/cure-naturali/articoli/vita-naturale/cielo-stellato.jpg/jcr:content.jpg");
+    background-size: cover;
+    border: 4px solid black;
+    box-shadow: 18px -5px 12px 0px;
+    width: 500px;
+    height: 700px;
+}
+
+.container-schermata{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#contenitore-pulsanti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.contenitore {
+    margin: 2px;
+}
+
+.pulsante {
+    background-color: black;
+    color: lightblue;
+    font-size: 2.5rem;
+    border: black solid 2px;
+    height: 90px;
+    width: 100px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.schermata {
+    background-color: lightblue;
+    color: blue;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+    border: black solid 5px;
+    margin: 4px 2px;
+    width: 415px;
+    height: 70px;            
+}
+
+.contenitore-risultato{
+    width: 428px;
+    height: 100px;
+}
+
+.risultato {
+    background-color: black;
+    color: lightblue;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
