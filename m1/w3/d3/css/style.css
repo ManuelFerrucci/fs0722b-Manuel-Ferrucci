@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+
+    font-size: 16px;
+    font-family: 'Lobster', cursive;
+
+}
+
+body{
+
+    margin: 0;
+    background-image: url("https://img.besthqwallpapers.com/Uploads/4-5-2020/131487/colorful-smoke-4k-colorful-backgrounds-smoke-textures-creative.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1{
+
+    font-size: 6rem;
+    text-align: center;
+
+}
+
+h2{
+
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+.span1{
+
+    color: green;
+
+}
+
+.span2{
+
+    color: red;
+
+}
+
+#contenitore-totale{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+
+#contenitore1{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+#contenitore2{
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#contenitore3{
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#box-task{
+    width: 800px;
+    display: flex;
+    align-items: center;
+
+}
+
+#testo-task{
+
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+
+}
+
+#tasto1{
+
+    color: green;
+    width: 200px;
+    height: 55px;
+    margin-left: 10px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+    
+}
+
+#lista-da-fare, #lista-dei-completati{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+
+}
+
+.fare{
+
+    font-size: 5rem;
+    color: red;
+
+}
+
+.fatto{
+
+    font-size: 5rem;
+    color: green
+
+}
+
+.da-fare{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    font-size: 3rem;
+    padding:15px;
+    background-color: rgba(255, 0, 0, 0.614);
+    margin-bottom: 15px;
+    border: 3px solid #000;
+}
+
+.da-fare.completato{
+    background-color: lightgreen;
+}
+
+.da-fare button{
+    width: 150px;
+    height: 50px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.da-fare.completato button{
+    background-color: green;
+}
