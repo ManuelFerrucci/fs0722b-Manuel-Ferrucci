@@ -1,0 +1,255 @@
+<html>
+  <head>
+    <style>
+      .myHeading {
+        color: red;
+      }
+
+      .myHeading.nuovo-colore{
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="myClass" onclick="makeItClickable()">Questo è il titolo della pagina</h1>
+      <h2>Questo è il sottotitolo della pagina</h2>
+    </div>
+
+    <div>
+      <hr />
+
+      <ul id="firstList">
+        <li>Primo</li>
+        <li>Secondo</li>
+        <li>Terzo</li>
+      </ul>
+
+      <ul id="secondList">
+        <li>Primo</li>
+        <li>Secondo</li>
+        <li>Terzo</li>
+      </ul>
+
+      <a href="https://epicode.com"
+        >Questo link porta all'homepage di EPICODE</a
+      >
+
+      <div>
+        <p>Questo testo è qui solo per gli esercizi</p>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="input-field"
+          placeholder="input field per gli esercizi"
+        />
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Anche questo testo è qua solamente per gli esercizi!</p>
+      <h2 style="color: red" onclick="changeFooterText()">
+        Salva questa pagina sul tuo computer e aprila con VSCode per vedere le
+        domande!
+      </h2>
+    </div>
+    <script>
+
+
+      /* ESERCIZIO 1
+       Scrivi una funzione per cambiare il titolo del documento in qualcos'altro.
+      */
+
+
+      function cambiaTitolo() {
+
+        document.querySelector('.myClass').innerHTML = 'Titolo cambiato';
+
+      };
+
+      cambiaTitolo();
+
+
+
+      /* ESERCIZIO 2
+       Scrivi una funzione per cambiare la classe del titolo della pagina in "myHeading".
+      */
+
+
+      function cambiaClasse() {
+        
+        document.querySelector('.myClass').classList.replace('myClass', 'myHeading');
+
+      };
+
+      cambiaClasse();
+
+
+
+      /* ESERCIZIO 3
+       Scrivi una funzione per cambiare il contenuto di tutti i p che sono discendenti di un div.
+      */
+
+
+      function changePcontent() {
+
+        //so che si può fare in un altro modo sicuramente più consono, ma al momento, senza consultare nessuna documentazione esterna ma contando solo sulle mie forze, non mi viene.
+        //PS PROVANDO CON querySelectorALL NON FUNZIONA, NON CAPISCO PERCHE'
+
+        document.querySelector('div  p').innerHTML = 'Ho cambiato il testo dei p'; 
+        document.querySelector('.footer  p').innerHTML = 'Ho cambiato il testo dei p'; 
+
+      };
+
+      changePcontent();
+
+
+      /* ESERCIZIO 4
+       Scrivi una funzione per cambiare la proprietà href di ogni link a https://www.google.com
+      */
+
+
+      function changeUrls() {
+        
+        document.querySelector('a').setAttribute('href', 'https://www.google.com');
+
+      };
+
+      changeUrls();
+
+
+      /* ESERCIZIO 5
+       Scrivi una funzione per aggiungere un nuovo elemento alla seconda lista non-ordinata.
+      */
+
+
+      function addToTheSecond() {
+        
+        let liNuovo = document.createElement('li');
+        let testoLiNuovo = document.createTextNode('Li creato con JS');
+
+        liNuovo.append(testoLiNuovo);
+        
+        document.querySelector('#secondList').append(liNuovo);
+
+      };
+
+      addToTheSecond();
+
+
+
+      /* ESERCIZIO 6
+       Scrivi una funzione per aggiungere un secondo paragrafo al primo div.
+      */
+
+
+      function addParagraph() {
+        
+        let pNuovo = document.createElement('p');
+        let testoPNuovo = document.createTextNode('P aggiunto con JS');
+
+        pNuovo.append(testoPNuovo);
+        
+        document.querySelector('body > div').append(pNuovo);
+
+      };
+
+      addParagraph();
+
+
+
+      /* ESERCIZIO 7
+       Scrivi una funzione per far scomparire la prima lista non-ordinata.
+      */
+
+
+      function firstUlDisappear() {
+        
+        document.querySelector('#firstList').remove('ul');
+
+      }
+
+      firstUlDisappear();
+
+
+
+      /* ESERCIZIO 8
+       Scrivi una funzione per rendere verde lo sfondo di ogni lista non-ordinata.
+      */
+
+
+      function paintItGreen() {
+
+        //document.querySelector('#firstList').style.backgroundColor = "green"; //è commentato perché essendo stato rimosso nell'esercizio precedente, mi darebbe errore
+        
+        document.querySelector('#secondList').style.backgroundColor = "green";
+
+      }
+
+      paintItGreen();
+
+
+
+      /* ESERCIZIO 9
+       Rendi il tag h1 capace di cambiare colore del testo ogni volta che l'utente ci clicca sopra.
+      */
+
+
+      function makeItClickable() {
+          
+          let testoH1 = document.querySelector('.myHeading'); //la classe dell'h1 è diventata "myHeading" perché l'abbiamo cambiata in uno degli esercizi precedenti
+
+          testoH1.classList.toggle('nuovo-colore');
+
+
+        }; 
+
+      makeItClickable(); /*si poteva (e forse si DOVEVA) fare con addEventListener, ma senza riguardare nessuna documentazione non mi veniva fuori bene la sequenza di codici, quindi ho fatto così.
+      Ho aggiunto inline nell'html dell'h1 "onclick" inserendoci dentro la funzione, come feci per la calcolatrice.*/
+
+
+
+      /* ESERCIZIO 10
+       Cambia il testo del footer con qualcos'altro quando l'utente ci clicca sopra.
+      */
+
+     
+      function changeFooterText() {
+
+        let testoFooter = document.querySelector('.footer h2');
+        
+        testoFooter.classList.toggle('nuova-classe');
+
+        if (testoFooter.classList = 'nuova-classe') {
+
+          testoFooter.innerHTML = 'Nuovo testo creato con JS';
+
+        }
+
+      };
+
+      changeFooterText(); /*si poteva (e forse si DOVEVA) fare con addEventListener, ma   senza riguardare nessuna documentazione non mi veniva fuori bene la sequenza di    codici, quindi ho fatto così.
+      Ho aggiunto inline nell'html dell'h1 "onclick" inserendoci dentro la funzione, come   feci per la calcolatrice.*/
+
+
+
+
+      /* ESERCIZIO 11
+       Aggiungi un event listener al campo di testo nella pagina e fai in modo che dopo ogni lettera il suo valore venga mostrato in console.
+      */
+
+      /* ESERCIZIO 12
+       Crea un messaggio di benvenuto con un alert quando la pagina ha finito di caricarsi.
+      */
+
+      window.onload = (event) => {
+
+        alert('La pagina è stata correttamente caricata!');
+
+      }; //non funziona sempre: se non sei sulla finestra chrome del live server ma su un'altra e salvi qui su VSC, funziona, se stai sulla finestra chrome del live server, esce il popup anche se non ha caricato
+      
+    </script>
+  </body>
+</html>
