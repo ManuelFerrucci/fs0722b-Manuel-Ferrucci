@@ -75,7 +75,7 @@ console.log(me); //qui faccio console.log per visualizzare in console i valori d
 */
 
 
-me.skills.push('Javascript');
+me.skills.push('Javascript'); //con 'push' vado ad aggiungere l'elemento 'Javascript' dall'array 'skills'
 
 console.log(me); //qui faccio console.log per visualizzare in console i valori dell'oggetto me, aggiornati con l'aggiunta di un nuovo elemento "javascript" all'array "skills". PS. IMPORTANTE! -> per visualizzare in modo perfetto in console, vanno commentati alcuni esercizi precedenti o successivi!
 
@@ -86,7 +86,7 @@ console.log(me); //qui faccio console.log per visualizzare in console i valori d
 */
 
 
-me.skills.pop('Javascript');
+me.skills.pop('Javascript'); //con 'pop' vado a rimuovere l'elemento 'Javascript' dall'array 'skills'
 
 console.log(me); //qui faccio console.log per visualizzare in console i valori dell'oggetto me, aggiornati con la rimozione dell'elemento "javascript" dall'array "skills". IMPORTANTE! -> per visualizzare in modo perfetto in console, vanno commentati alcuni esercizi precedenti o successivi!
 
@@ -213,13 +213,27 @@ onlyLetters('Ci sono 4 gatti ogni 5 cani'); //qui gli dico di eseguire la funzio
 */
 
 
-function isThisAnEmail(stringa4) {
+function isThisAnEmail(email) { //qui si crea una funzione "isThisAnEmail" al cui interno inserisco il parametro "email"
+    
+    //let email=document.forms['miomodulo'].email.value; // recupero il valore della email indicata nel form
+    
+    if(email==''){alert("Devi indicare un indirizzo email"); return false}; // se non ho inserito nulla nel campo
+    
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) { // verifico se è un indirizzo valido indicando tutti questi caratteri
 
-  
+       //alert("L'indirizzo email che hai inserito e' valido"); //se rispetta le condizioni, viene fuori questo alert
 
-};
+    } else { //altrimenti...
 
-isThisAnEmail();
+       //alert("L'indirizzo email che hai inserito non e' valido"); //viene fuori questo altro alert
+
+    }
+
+    return false;
+
+}
+
+isThisAnEmail('ciccio.pasticcio@hotmail.it'); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte, inserendo la mail da controllare
 
 
 
@@ -228,11 +242,15 @@ isThisAnEmail();
 */
 
 
-function whatDayIsIt(data) { //qui creo una funzione "whatDayIsIt" al cui interno inserisco il parametro "stringa3"
+function whatDayIsIt() { //qui creo una funzione "whatDayIsIt" al cui interno inserisco il parametro "stringa3"
 
-  let giorniSettimana = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato']; //qui definisco un array con i giorni della settimana
+  let data5 = new Date(); //qui definisco la variabile
 
-  return console.log(giorniSettimana[5]); // qui dico che mi deve ritornare in console il valore di giorniSettimana con indice "5"
+  let giorno = data5.getDay(); //qui creo la variabile "giorno" che prende il giorno
+
+  let listaGiorni = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato'] //creo l'array contenente tutti i giorni della settimana
+
+  return console.log('Oggi è '+ (listaGiorni[giorno])); // qui dico che mi deve ritornare in console il valore di listaGiorni che corrisponde al giorno di oggi
 
 };
 
@@ -254,14 +272,27 @@ whatDayIsIt(); //qui gli dico di eseguire la funzione, altrimenti tutto il proce
 */
 
 
-function rollTheDices(a) {
+function rollTheDices(numero1) { //qui creo una funzione "rollTheDices" al cui interno inserisco il parametro "numero1" che andrò a definire
 
-  
+  let object = {}; //qui creo un oggetto "object"
+  let lista = []; //qui creo un array "lista"
+
+  for (let i = 0; i < numero1; i++) { //qui creo un ciclo for che cicla i risultati relativi alla lunghezza del parametro della funzione che andrò poi a definire
+    
+    lista.push(dice()); //qui gli dico che i valori generati dalla funzione "dice()" devono essere inseriti nell'array "lista" con un push
+    
+  }
+
+  object.values = lista;
+  object.sum = eval(lista.join('+')); // con join aggiungo gli elementi all'array "lista" sotto forma di stringa, mentre con eval indico che deve ritornare il loro valore di completamento
 
 };
 
 
-//dice()
+//IMPORTANTE -> per visualizzarlo CORRETTAMENTE, decommentare la riga di lancio funzione in basso, altrimenti dà errore bloccante in concatenamento con il console.log dell'esercizio del dice();
+
+//console.log(rollTheDices(4));
+
 
 
 /* ESERCIZIO 9
@@ -293,7 +324,7 @@ howManyDays('11/11/2021'); //qui gli dico di eseguire la funzione, altrimenti tu
 
 function isTodayMyBirthday() {
 
-  let giorno = 86400000;
+  let giorno = 86400000; //creo una variabile "giorno" a cui assegno il numero di millisecondi che costituiscono un giorno (1000*60*60*24)
 
   let dataDiOggi = '02/21'; //creo una variabile "dataDiOggi" a cui assegno la data di oggi
 
@@ -449,19 +480,22 @@ const movies = [
 */
 
 
-function deleteProp (a, b) {
+let arrayOggetti = { //creo oggetto in cui inserisco due proprietà
 
-  a = {prop1: 'Proprietà1', prop2: 'Proprietà2', prop3: 'Proprietà3'}
+  prop1: 'Proprietà1',
+  prop2: 'Proprietà2'
 
-  b = 'prop2';
+}
 
-  delete a.b; //con 'delete' vado ad eliminare la proprietà 'prop2' dall'oggetto 'oggetto'
+function deleteProp (a, b) { //creo funzione "deleteProp" in cui inserisco due parametri
 
-  console.log(a); //qui faccio console.log per visualizzare in console i valori dell'oggetto oggetto dopo l'eliminazione della proprietà "prop2"
+  delete a[b]; //con 'delete' vado ad eliminare la proprietà che coincide alla stringa "b" dall'oggetto 'arrayOggetti'
+
+  return console.log(a); //qui faccio console.log per visualizzare in console i valori dell'oggetto oggetto dopo l'eliminazione della proprietà
 
 };
 
-deleteProp(); //DA RIVEDERE
+deleteProp(arrayOggetti, 'prop2'); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte, definendo oggetto e stringa coincidente al secondo parametro
 
 
 
@@ -470,13 +504,24 @@ deleteProp(); //DA RIVEDERE
 */
 
 
-function newestMovie() {
+function newestMovie() { //creo funzione "newestMovie"
 
-  
+  let listaFilms = movies; //creo una variabile che coincide all'array "movies"
+  let dataFilms = []; //creo un array e lo lascio vuoto
+
+  for (let i = 0; i < listaFilms.length; i++) { //qui creo un ciclo for che esamina gli elementi presenti nell'array "movies"
+    
+    dataFilms.push(listaFilms[i].Year); //qui con il metodo "push" gli dico che deve inserire nell'array "listaFilms" tutti gli anni di uscita che trova
+    
+  }
+
+  dataFilms.sort(); //qui utilizzo metodo "sort" per ordinare alfabeticamente la lista
+
+  console.log(listaFilms[listaFilms.length-1].Title + ' ' + listaFilms[listaFilms.length-1].Year); //qui dico che deve darmi in console come risultato l'anno di uscita più recente del film ed il titolo corrispondente
 
 };
 
-newestMovie();
+newestMovie(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte,
 
 
 
@@ -485,17 +530,21 @@ newestMovie();
 */
 
 
-/*function countMovies() {
+function countMovies() { //creo una funzione "countMovies"
 
-  let conteggio = 0;
+  let films = []; //creo un array vuoto chiamato "films" e lo lascio vuoto
   
-  for(let i = 0; i < movies.length; ++i){ if(movies[i] == 0) conteggio++;}
+  for(let i = 0; i < movies.length; ++i) { //qui creo un ciclo for che esamina gli elementi presenti nell'array "movies"
 
-  console.log(conteggio);
+    films.push(movies[i].Title); //qui con il metodo "push" gli dico che deve inserire nell'array tutti i titoli che trova
+    
+  }
+
+  return console.log(films); //qui deve ritornare il console.log della lista di film
 
 };
 
-countMovies();*/
+countMovies(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte.
 
 
 
@@ -504,25 +553,25 @@ countMovies();*/
 */
 
 
-function onlyTheYears() {
+function onlyTheYears() { //creo una funzione "onlyTheYears"
   
-  let soloAnni = [];
+  let soloAnni = []; //creo un array vuoto chiamato "soloAnni" e lo lascio vuoto
 
-  let proprietàFiltrate;
+  let proprietàFiltrate; //dichiaro una variabile "proprietàFiltrate"
 
-  for (let i = 0; i < movies.length; i++) {
+  for (let i = 0; i < movies.length; i++) {  //qui creo un ciclo for che esamina gli elementi presenti nell'array "movies"
     
-    soloAnni.push(movies[i].Year);
+    soloAnni.push(movies[i].Year); //qui con il metodo "push" gli dico che deve inserire nell'array tutti gli anni d'uscita che trova
     
   }
 
-  proprietàFiltrate = soloAnni.filter(elemento => elemento.includes());
+  proprietàFiltrate = soloAnni.filter(elemento => elemento.includes()); //creo una variabile che corrisponde all'array filtrato solo per gli elementi che superano i requisiti di ricerca
 
-  console.log(soloAnni);
+  console.log(soloAnni); //qui deve fare il console.log della lista degli anni d'uscita
 
 };
 
-onlyTheYears();
+onlyTheYears(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte.
 
 
 
@@ -531,6 +580,26 @@ onlyTheYears();
 */
 
 
+let risultato = []; //creo un array vuoto chiamato "risultato" e lo lascio vuoto
+
+function onlyInLastMillennium() { //creo una funzione "onlyInLastMillennium"
+
+  
+  for (let i = 0; i < movies.length; i++) { //qui creo un ciclo for che esamina gli elementi presenti nell'array "movies"
+    
+    if (parseInt(movies[i].Year) < 2000) { //qui creo un if secondo il quale secondo il quale se la stringa dell'anno d'uscita del film, convertita in numero con parseInt, è minore di 2000...
+
+      risultato.push(risultato[i]); //...allora il valore generato deve essere inserito con un push all'interno dell'array 
+      
+    }
+    
+  }
+  
+  return console.log(risultato); //qui deve ritornare il console.log della lista degli anni d'uscita
+  
+};
+
+onlyInLastMillennium(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte.
 
 
 
@@ -540,35 +609,33 @@ onlyTheYears();
 */
 
 
-function sumAllTheYears() {
+function sumAllTheYears() { //creo una funzione "onlyInLastMillennium"
   
-  let soloAnni = [];
+  let soloAnni = []; //creo un array vuoto chiamato "soloAnni" e lo lascio vuoto
 
-  let proprietàFiltrate;
+  let proprietàFiltrate; //creo una variabile
 
-  for (let i = 0; i < movies.length; i++) {
+  for (let i = 0; i < movies.length; i++) { //qui creo un ciclo for che esamina gli elementi presenti nell'array "movies"
     
-    soloAnni.push(movies[i].Year);
+    soloAnni.push(movies[i].Year); //qui con il metodo "push" gli dico che deve inserire nell'array tutti gli anni d'uscita che trova
     
   }
 
-  proprietàFiltrate = soloAnni.filter(elemento => elemento.includes());
+  proprietàFiltrate = soloAnni.filter(elemento => elemento.includes()); //creo una variabile che corrisponde all'array filtrato solo per gli elementi che superano i requisiti di ricerca
 
-  console.log(soloAnni);
+  let somma = function(soloAnni) { //creo una variabie somma che contiene una funzione
 
-  let somma = function(soloAnni) {
-
-    return soloAnni.reduce((a, b) => a + b);
+    return soloAnni.reduce((a, b) => a + b); //con reduce vado ad unire tutti i valori in uno solo
 
   };
   
-  let sum = somma(soloAnni);
+  let sum = somma(soloAnni); //qui definisco e assegno una variabile con valore della somma della lista degli anni d'uscita
   
-  console.log(sum);
+  console.log(sum); //qui deve fare il console.log della lista della somma
 
 };
 
-sumAllTheYears();
+sumAllTheYears(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte.
 
 
 
@@ -577,25 +644,26 @@ sumAllTheYears();
 */
 
 
-function searchByTitle(nomeDelFilm) {
+function searchByTitle(nomeDelFilm) { //creo una funzione "searchByTitle"
   
-  let titoloFilm = [];
+  let titoloFilm = []; //creo un array vuoto chiamato "titoloFilm" e lo lascio vuoto
 
-  let proprietàFiltrate;
+  let proprietàFiltrate; //creo una variabile
 
-  for (let i = 0; i < movies.length; i++) {
+  for (let i = 0; i < movies.length; i++) { //qui creo un ciclo for che esamina gli elementi presenti nell'array "movies"
     
-    titoloFilm.push(movies[i].Title);
+    titoloFilm.push(movies[i].Title); //qui con il metodo "push" gli dico che deve inserire nell'array tutti i titoli che trova
     
   }
 
-  proprietàFiltrate = titoloFilm.filter(elemento => elemento.includes(nomeDelFilm));
+  proprietàFiltrate = titoloFilm.filter(elemento => elemento.includes(nomeDelFilm)); //creo una variabile che corrisponde all'array filtrato solo per gli elementi che superano i requisiti di ricerca
 
-  console.log(proprietàFiltrate);
+  console.log(proprietàFiltrate); //qui deve fare il console.log della lista di risultati
 
 };
 
-searchByTitle('Lord');
+searchByTitle('Lord'); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte, inserendo il parametro che preferisco
+
 
 
 
@@ -605,7 +673,25 @@ searchByTitle('Lord');
 */
 
 
+function searchAndDivide(nomeDelFilm) { //creo una funzione "searchByTitle"
+  
+  let match = []; //creo un array vuoto chiamato "match" e lo lascio vuoto
 
+  let unmatch; //creo una variabile
+
+  for (let i = 0; i < movies.length; i++) { //qui creo un ciclo for che esamina gli elementi presenti nell'array "movies"
+    
+    match.push(movies[i].Title); //qui con il metodo "push" gli dico che deve inserire nell'array tutti i titoli che trova
+    
+  }
+
+  unmatch = match.filter(elemento => elemento.includes(nomeDelFilm)); //creo una variabile che corrisponde all'array filtrato solo per gli elementi che superano i requisiti di ricerca
+
+  console.log(unmatch); //qui deve fare il console.log della lista di risultati
+
+};
+
+searchByTitle('Ring'); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte, inserendo il parametro che preferisco
 
 
 
@@ -614,11 +700,17 @@ searchByTitle('Lord');
 */
 
 
-function removeIndex(a) {
+function removeIndex(a) { //creo una funzione "removeIndex"
+  
+  let indiciRimasti = []; //creo un array vuoto chiamato "indiciRimasti" e lo lascio vuoto
 
+  indiciRimasti = movies.slice(a); //qui con il metodo "slice" gli dico che deve rimuovere gli elementi indicati
 
+  console.log(indiciRimasti); //qui deve fare il console.log della lista con gli indici rimasti
 
-}
+};
+
+removeIndex([2]); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte, indicando l'indice da rimuovere
 
 
 
@@ -629,15 +721,15 @@ function removeIndex(a) {
 */
 
 
-function selezionaContainer() {
+function selezionaContainer() { //creo una funzione "selezionaContainer"
 
-  elementoSelez = document.querySelector('#container');
+  elementoSelez = document.querySelector('#container'); //creo una variabile che corrisponde alla selezione dell'id "container"
 
-  console.log(elementoSelez);
+  console.log(elementoSelez); //qui deve fare il console.log della variabile
 
 };
 
-selezionaContainer();
+selezionaContainer(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte
 
 
 
@@ -646,15 +738,15 @@ selezionaContainer();
 */
 
 
-function selezionaTd() {
+function selezionaTd() { //creo una funzione "selezionaTd"
 
-  elementoSelez = document.querySelectorAll('td');
+  elementoSelez = document.querySelectorAll('td'); //creo una variabile che corrisponde alla selezione dei tag "td"
 
-  console.log(elementoSelez);
+  console.log(elementoSelez); //qui deve fare il console.log della variabile
 
 };
 
-selezionaTd();
+selezionaTd(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte
 
 
 
@@ -663,21 +755,21 @@ selezionaTd();
 */
 
 
-function testoTd() {
+function testoTd() { //creo una funzione "testoTd"
 
-  elementoSelez = document.querySelectorAll('td');
+  let elementoSelez = document.querySelectorAll('td'); //creo una variabile che corrisponde alla selezione dei tag "td"
 
-  for (let i = 0; i < elementoSelez.length; i++) {
+  for (let i = 0; i < elementoSelez.length; i++) { //qui creo un ciclo for che esamina gli elementi presenti nell'array "elementoSelez"
 
-    let valore = elementoSelez[i].value;
+    let valore = elementoSelez[i].value; //creo una variabile che corrisponde al valore dei tag "td"
 
-    return console.log([i]);
-    
+    return console.log([valore]); //qui deve ritornare in console.log della variabile
+
   }
 
 };
 
-testoTd();
+testoTd(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte
 
 
 
@@ -686,17 +778,17 @@ testoTd();
 */
 
 
-function aggiungiColore() {
+function aggiungiColore() { //creo una funzione "aggiungiColore"
 
-  let link = document.querySelector('a');
+  let link = document.querySelector('a'); //creo una variabile che corrisponde alla selezione dei tag "a"
 
-  coloreCambiato = link.style.backgroundColor = "red";
+  coloreCambiato = link.style.backgroundColor = "red"; //creo una variabile che corrisponde che corrisponde alla variabile precedentemente creata a cui ho dato regole css di stile con javascript
 
-  console.log(link);
+  console.log(link); //qui deve fare il console.log della variabile
 
 };
 
-aggiungiColore();
+aggiungiColore(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte
 
 
 
@@ -705,21 +797,21 @@ aggiungiColore();
 */
 
 
-function aggiungiElemento() {
+function aggiungiElemento() { //creo una funzione "aggiungiElemento"
 
-  lista = document.querySelector('#myList');
+  let lista = document.querySelector('#myList'); //qui creo variabile corrispondente alla selezione dell'id "mylist"
         
-  let liNuovo = document.createElement('li');
-  let testoLiNuovo = document.createTextNode('Li creato con JS');
+  let liNuovo = document.createElement('li'); //qui creo variabile corrispondente alla creazione di un "li"
+  let testoLiNuovo = document.createTextNode('Li creato con JS'); //qui creo variabile corrispondente alla creazione di un testo 'Li creato con JS'
 
-  liNuovo.append(testoLiNuovo);
-  lista.append(liNuovo);
+  liNuovo.append(testoLiNuovo); //qui vado ad associare il testo creato al nuovo "li"
+  lista.append(liNuovo); //qui vado ad inserire il nuovo "li" alla fine della lista
 
-  console.log(lista);
+  console.log(lista); //qui deve fare il console.log della variabile
 
 };
 
-aggiungiElemento();
+aggiungiElemento(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte
 
 
 
@@ -728,15 +820,16 @@ aggiungiElemento();
 */
 
 
-function primaListaVia() {
+function primaListaVia() { //creo una funzione "aggiungiElemento"
         
-  lista = document.querySelector('#myList').remove('ul');
+  let lista = document.querySelector('#myList').remove('ul'); //qui creo variabile corrispondente alla selezione dell'id "mylist", e gli indico di rimuovere la lista non ordinata con quell'id
   
-  console.log(lista);
+  console.log(lista); //qui deve fare il console.log della variabile
+
 
 }
 
-primaListaVia();
+primaListaVia(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte
 
 
 
@@ -745,15 +838,16 @@ primaListaVia();
 */
 
 
-function aggiungiClasse() {
+function aggiungiClasse() { //creo una funzione "aggiungiClasse"
           
-  let tagTr = document.querySelector('tr');
+  let tagTr = document.querySelector('tr'); //qui creo variabile corrispondente alla selezione del primo tag "tr"
 
-  tagTr.classList.add('nuovo-colore');
+  tagTr.classList.add('test'); //qui dico di aggiungere al primo tag "tr" la nuova classe "test"
 
 }; 
 
-aggiungiClasse();
+aggiungiClasse(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte
+
 
 
 
