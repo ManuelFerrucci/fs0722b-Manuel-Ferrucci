@@ -477,25 +477,17 @@ newestMovie();
 */
 
 
-function countMovies() {
+/*function countMovies() {
 
   let conteggio = 0;
   
-  for (let i = 0; i < movies.length; ++i) {
-     if(movies[i] == Title) {
-      
-      count++;
+  for(let i = 0; i < movies.length; ++i){ if(movies[i] == 0) conteggio++;}
 
-      console.log(i);
-    
-    }
-  
-
-  }
+  console.log(conteggio);
 
 };
 
-countMovies();
+countMovies();*/
 
 
 
@@ -530,9 +522,47 @@ onlyTheYears();
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
 
+
+
+
+
+
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
+
+
+function sumAllTheYears() {
+  
+  let soloAnni = [];
+
+  let proprietàFiltrate;
+
+  for (let i = 0; i < movies.length; i++) {
+    
+    soloAnni.push(movies[i].Year);
+    
+  }
+
+  proprietàFiltrate = soloAnni.filter(elemento => elemento.includes());
+
+  console.log(soloAnni);
+
+  let somma = function(soloAnni) {
+
+    return soloAnni.reduce((a, b) => a + b, 0);
+
+  };
+  
+  let sum = somma(soloAnni);
+  
+  console.log(sum);
+
+};
+
+sumAllTheYears();
+
+
 
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
@@ -566,9 +596,23 @@ searchByTitle('Lord');
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
+
+
+
+
+
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
+
+
+function removeIndex(a) {
+
+
+
+}
+
+
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
@@ -576,29 +620,136 @@ searchByTitle('Lord');
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
+
+function selezionaContainer() {
+
+  elementoSelez = document.querySelector('#container');
+
+  console.log(elementoSelez);
+
+};
+
+selezionaContainer();
+
+
+
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+
+
+function selezionaTd() {
+
+  elementoSelez = document.querySelectorAll('td');
+
+  console.log(elementoSelez);
+
+};
+
+selezionaTd();
+
+
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+
+function testoTd() {
+
+  elementoSelez = document.querySelectorAll('td');
+
+  for (let i = 0; i < elementoSelez.length; i++) {
+
+    return console.log(i);
+    
+  }
+
+};
+
+testoTd();
+
+
+
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+
+
+function aggiungiColore() {
+
+  let link = document.querySelector('a');
+
+  coloreCambiato = link.style.backgroundColor = "red";
+
+  console.log(link);
+
+};
+
+aggiungiColore();
+
+
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+
+function aggiungiElemento() {
+
+  lista = document.querySelector('#myList');
+        
+  let liNuovo = document.createElement('li');
+  let testoLiNuovo = document.createTextNode('Li creato con JS');
+
+  liNuovo.append(testoLiNuovo);
+  lista.append(liNuovo);
+
+  console.log(lista);
+
+};
+
+aggiungiElemento();
+
+
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
+
+function primaListaVia() {
+        
+  lista = document.querySelector('#myList').remove('ul');
+  
+  console.log(lista);
+
+}
+
+primaListaVia();
+
+
+
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+
+
+function aggiungiClasse() {
+          
+  let tagTr = document.querySelector('tr');
+
+  tagTr.classList.add('nuovo-colore');
+
+}; 
+
+aggiungiClasse();
+
+
+
+
+
+
 
 // [EXTRA] JS Avanzato
 
