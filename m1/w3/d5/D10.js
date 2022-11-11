@@ -173,7 +173,7 @@ splitMe('Buongiorno a tutti'); //qui gli dico di eseguire la funzione, altriment
 
 function deleteOne(stringa2, booleano) { //qui creo una funzione "deleteOne" al cui interno inserisco i parametri "stringa2" e il booleano
 
-  if (booleano == true) { //qui creo un if indicando che se "il booleano è UGUALE UGUALE a true" ...
+  if (booleano == true) { //qui creo un if indicando che se "il booleano è uguale a true" ...
 
     let stringa2SenzaPrima = stringa2.slice(1, 10);
     return console.log(stringa2SenzaPrima); // ...mi deve ritornare in console il valore di "stringa2" senza il primo carattere
@@ -293,22 +293,30 @@ howManyDays('11/11/2021'); //qui gli dico di eseguire la funzione, altrimenti tu
 
 function isTodayMyBirthday() {
 
-  let dataDiOggi = '11/11/2022'; //creo una variabile "dataDiOggi" a cui assegno la data di oggi
+  let giorno = 86400000;
 
-  let dataMioCompleanno = '02/20/1992'; //creo una variabile "dataMioCompleanno" a cui assegno la data del mio compleanno
+  let dataDiOggi = '02/21'; //creo una variabile "dataDiOggi" a cui assegno la data di oggi
+
+  let dataMioCompleanno = '02/20'; //creo una variabile "dataMioCompleanno" a cui assegno la data del mio compleanno
 
   let x = new Date(dataDiOggi); //creo una variabile "x" a cui assegno la data di oggi
   let y = new Date(dataMioCompleanno); //creo una variabile "y" a cui assegno la data del mio compleanno
 
-  if (x = y) {
+  differenzaTempo = Math.floor((x - y) / giorno); //creo una variabile "differenzaTempo" che equivale alla differenza in giorni dalla data odierna a quella che andrò a stabilire
 
-    return console.log(true);
+  if (differenzaTempo == 0) { //qui creo un if indicando che se la differenza è uguale a zero ...
+
+    return console.log(true); //...allora deve ritornarmi in console true
+
+  } else { //altrimenti...
+
+    return console.log(false); //...deve ritornarmi in console false
 
   }
 
 };
 
-isTodayMyBirthday();
+isTodayMyBirthday(); //qui gli dico di eseguire la funzione, altrimenti tutto il processo non parte
 
 
 
@@ -550,7 +558,7 @@ function sumAllTheYears() {
 
   let somma = function(soloAnni) {
 
-    return soloAnni.reduce((a, b) => a + b, 0);
+    return soloAnni.reduce((a, b) => a + b);
 
   };
   
@@ -661,7 +669,9 @@ function testoTd() {
 
   for (let i = 0; i < elementoSelez.length; i++) {
 
-    return console.log(i);
+    let valore = elementoSelez[i].value;
+
+    return console.log([i]);
     
   }
 
