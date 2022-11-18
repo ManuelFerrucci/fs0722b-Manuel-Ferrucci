@@ -1,0 +1,99 @@
+body{
+    font-size: 18px;
+    color: white;
+}
+
+h1{
+    margin-bottom:0px;
+}
+
+h2{
+    color: white;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 3em;
+}
+
+ /*FLEXBOX*/
+
+#flex_result_container{
+    text-align: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+}
+
+#contenitore__totale--1{
+    text-align: left;
+}
+
+#contenitore__totale--3{
+    text-align: right;
+}
+
+#corrette, #errate{
+
+    font-weight: 700;
+
+}
+
+.container-logo{
+
+    margin-bottom: 20px;
+
+}
+
+.text_risultato{
+
+    font-weight: 700;
+    margin-top: 0;
+
+}
+
+.blue_text{
+    color: #00FFFF;
+    margin-top: 0px;
+    margin-bottom: 2em;
+    font-weight: 700;
+}
+
+.comunicazione_esito{
+    font-weight: 700;
+}
+
+.text_result{
+    text-align: center;
+}
+
+.percentuale_risultati{
+    font-size: 3.2em;
+    margin: 0;
+}
+
+/*HYPERLINK RATE US*/
+
+footer{
+    text-align: center;
+}
+
+.contenitore__button--link{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-style: solid;
+    border-width: 2.3px;
+    padding: 0.7em 2.9em;
+    box-shadow:
+    0.5px  0px 20px  rgba(0, 255, 255, 0.111),
+    0px -0.5px   rgba(0, 255, 255, 0.142),
+    0.5px 0px 20px  rgba(0, 255, 255, 0.179),
+    -0px  0.5px   rgba(0, 255, 255, 0.068); 
+}
+
+.contenitore__grafico--testi{
+    position: relative;
+    z-index: 20000;
+    bottom: 300px;
+}
