@@ -12,7 +12,7 @@ stars.forEach((star, clickedIdx) => {       //creamo un callbakc per ogni stella
                 otherStar.classList.remove("active");   //cosi anche se volessimo rifare la valutazione, l'index non è solo crescente ma anche decrescente
             }
         });
-        console.log(`star of index ${idx + 1} was clicked`);     //in uscità avremo così la stellina cliccata nell'indice
+        console.log(`star of index ${idx + 1} was clicked`);     //in uscita avremo così la stellina cliccata nell'indice
 
     });
 })

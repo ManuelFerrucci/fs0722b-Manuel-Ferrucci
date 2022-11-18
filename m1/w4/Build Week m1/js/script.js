@@ -108,14 +108,15 @@ var timeLeft = TimerValue;
 var timePassed = 0;
 const FULL_DASH_ARRAY = 283;
 
+//con window.onload le funzioni vengono lanciate appena caricata la pagina
 window.onload = function () {
   SeedRandom();
   countdownSecondi();
   TimerCheck(Timer);
 };
 
-//questa funzione è il CORE dell'intero progetto senza questo il gioco non funziona
-//ma cosa fa esattamente? allora: genera un un numero casuale da 0 alla lunghezza totale dell'array
+//questa funzione è il cuore dell'intero progetto; senza questo il gioco non funziona
+//genera un un numero casuale da 0 alla lunghezza totale dell'array
 //ogni numero è collegato ad una domanda
 function SeedRandom() {
   let num = Math.floor(Math.random() * questions.length);
@@ -123,7 +124,7 @@ function SeedRandom() {
   RandomDomande();
 }
 
-//questa funzione è collegata al seedRanom, applica la domanda direttamente all' h1
+//questa funzione è collegata al seedRandom, applica la domanda direttamente all' h1
 function RandomDomande() {
   if (questions.length == 0) {
     nextPage();
@@ -150,8 +151,7 @@ function NascondiBottoni() {
   }
 }
 
-//questa funzione viene richiamata ad ogni ciclo di domande, in questo modo prenderà le risposte sbagliate e quella corretta
-// di quella specifica domanda appena apparsa.
+//questa funzione viene richiamata ad ogni ciclo di domande, in questo modo prenderà le risposte sbagliate e quella corretta di quella specifica domanda appena apparsa.
 function ContentitoreRisposte() {
   risposte = [];
   risposte.push(questions[indexRandom].correct_answer);
@@ -160,7 +160,7 @@ function ContentitoreRisposte() {
   }
   console.log(risposte);
 
-  //questa funzione mescola l'array delle risposte
+  //qui richiamiamo la funzione che mescola l'array delle risposte
 
   RandomContentArrayRisposte(risposte);
 
@@ -186,28 +186,28 @@ function RandomContentArrayRisposte(inputArray) {
 
 console.log(risposte);
 
-//funzione dedicato al bottone
+//funzione dedicati al bottone
 var bottone = document.querySelector("#button-1");
 bottone.addEventListener("click", function () {
   let text = bottone.outerText;
   CheckRispostaCorretta(text);
 });
 
-//funzione dedicato al bottone
+//funzione dedicati al bottone
 var bottone1 = document.querySelector("#button-2");
 bottone1.addEventListener("click", function () {
   let text = bottone1.outerText;
   CheckRispostaCorretta(text);
 });
 
-//funzione dedicato al bottone
+//funzione dedicati al bottone
 var bottone2 = document.querySelector("#button-3");
 bottone2.addEventListener("click", function () {
   let text = bottone2.outerText;
   CheckRispostaCorretta(text);
 });
 
-//funzione dedicato al bottone
+//funzione dedicati al bottone
 var bottone3 = document.querySelector("#button-4");
 bottone3.addEventListener("click", function () {
   let text = bottone3.outerText;
@@ -300,4 +300,3 @@ function TimerCheck(timer) {
   }
 }
 
-//window.onload = countdownSecondi(); //in questo modo dico di avviare il countdown appena la pagina si è caricata

@@ -1,11 +1,11 @@
-var numCorrette = localStorage.getItem('risposteCorrette');
+var numCorrette = localStorage.getItem('risposteCorrette'); //dichiariamo 3 variabili 
 var numErrate = localStorage.getItem('risposteErrate');
 var lunghezzaArray = localStorage.getItem('numDomande');
 
 
-var numeroRisultatoCorr = Number(numCorrette);
-var numeroRisultatoErr = Number(numErrate);
-var domande = Number(lunghezzaArray);
+var numeroRisultatoCorr = parseInt(numCorrette); // dichiariamo delle variabili in cui convertiamo il risultato di tipo "stringa" in numero.
+var numeroRisultatoErr = parseInt(numErrate);
+var domande = parseInt(lunghezzaArray);
 
 var percentualeCorrette = (numeroRisultatoCorr / domande) * 100;
 //console.log(percentualeCorrette + '%');
@@ -21,7 +21,7 @@ let myCanvas = document.querySelector("#myCanvas").getContext("2d");
 let myLabels = ["WRONG", "CORRECT"];
 let myData = [numeroRisultatoErr, numeroRisultatoCorr];
 
-let chart = new Chart(myCanvas, {
+let chart = new Chart(myCanvas, { //questi sono i codici del grafico
   type: "doughnut",
   data: {
     labels: myLabels,
@@ -29,7 +29,7 @@ let chart = new Chart(myCanvas, {
       {
         label: "Punteggio",
         data: myData,
-        backgroundColor: ["#D20094", "#00FFFF"],
+        backgroundColor: ["#D20094", "#00FFFF"],     //qui indichiamo tutte le caratteristiche che deve avere il grafico
         borderWidth: "0.1",
         hoverBorderColor: "#000000",
         hoverBorderWidth: 0.1,
@@ -47,7 +47,7 @@ let chart = new Chart(myCanvas, {
   },
 });
 
-var contenitoreEsito = document.querySelector('#congratulazioni');
+var contenitoreEsito = document.querySelector('#congratulazioni'); //qui indichiamo il testo che deve apparire, se l'esame è superato oppure se no
 var contenitoreTesto = document.querySelector('#testo-sotto');
 if (percentualeCorrette > 60) {
   contenitoreEsito.innerHTML = 'Congratulations<br><span class="blue_text">You passed the exam.</span> ';
