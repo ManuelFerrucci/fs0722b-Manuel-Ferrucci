@@ -187,7 +187,7 @@ footer a {
 
 
 
-@media only screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
 
     /* BODY */
 
@@ -295,7 +295,7 @@ footer a {
 }
 
 
-@media only screen and (min-width:768px) {
+@media screen and (min-width:768px) {
     
     /* BODY */
 
@@ -387,7 +387,7 @@ footer a {
 
 
 
-@media only screen and (max-width:767px) {
+@media screen and (max-width:767px) {
     
     /* HEADER */
 
@@ -431,7 +431,7 @@ footer a {
 
 
 
-@media only print {
+@media print {
 
     body {
         background: white;
