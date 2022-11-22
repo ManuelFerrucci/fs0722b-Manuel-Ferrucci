@@ -620,7 +620,7 @@ footer a {
   
   .underLine {
   
-    width: 100%;
+    width: 500px;
     position: absolute;
     z-index: -1;
     left: 10px;
