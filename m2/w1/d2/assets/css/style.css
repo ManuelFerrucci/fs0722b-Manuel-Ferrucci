@@ -488,6 +488,7 @@ footer a {
     z-index: -1;
     left: 10px;
     bottom: -15px;
+    opacity: 0.5;
   
   }
 
@@ -619,11 +620,12 @@ footer a {
   
   .underLine {
   
-    width: 500px;
+    width: 100%;
     position: absolute;
     z-index: -1;
     left: 10px;
     bottom: -15px;
+    opacity: 0.5;
   
   }
 
@@ -759,6 +761,7 @@ footer a {
     z-index: -1;
     right: 15px;
     bottom: -15px;
+    opacity: 0.5;
   
   }
 
