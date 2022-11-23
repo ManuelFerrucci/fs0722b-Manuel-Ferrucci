@@ -469,4 +469,162 @@ main h2 {
         
     }
 
+    .article5 {
+
+        display: none;
+
+    }
+
+    .latest_news {
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media screen and (min-width: 661px) {
+
+    .latest_news {
+
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+
+    }
+
+    h1, h2 {
+
+        text-align: center;
+
+    }
+
+    .latest_news_img{
+
+        width: 80%;
+
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+
+    .latest_news {
+
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+
+    }
+
+    .latest_news_text {
+
+        width: 90%;
+        order: unset;
+        text-align: left;
+
+    }
+
+    .latest_news_text h3 {
+
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (min-width: 1040px) {
+
+    .article4 {
+
+        display: none;
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    main {
+        
+        flex-direction: unset;
+
+
+    }
+
+    .contenitore_menu ul {
+
+        display: unset;
+    
+    }
+
+    #logo_shop {
+
+        height: unset;
+        width: unset;
+    
+    }
+
+    h1, h2 {
+
+        text-align: unset;
+
+    }
+    
+    .article4 {
+
+        display: unset;
+
+    }
+
+    .latest_news {
+
+        flex-direction: unset;
+        align-items: center;
+        margin-right: 30px;
+        flex-wrap: unset;
+
+    }
+
+    .latest_news_text {
+
+        order: 1;
+
+    }
+
+}
+
+@media screen and (min-width: 1290px) {
+
+    .article4 {
+
+        display: none;
+
+    }
+
+    .article5 {
+
+        display: none;
+
+    }
+
+}
+
+@media screen and (min-width: 1620px) {
+
+    .article4 {
+
+        display: unset;
+
+    }
+
+}
+
+@media screen and (min-width: 1950px) {
+
+    .article5 {
+
+        display: unset;
+
+    }
+
 }
