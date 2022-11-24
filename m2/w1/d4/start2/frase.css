@@ -59,7 +59,7 @@ main {
 
     opacity: 0;
     animation: animazione_parole;
-    animation-duration: 3s;
+    animation-duration: 4.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 
@@ -69,8 +69,8 @@ main {
 
     opacity: 0;
     animation: animazione_parole;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    animation-duration: 4.5s;
+    animation-delay: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 
@@ -80,9 +80,9 @@ main {
 
     opacity: 0;
     animation: animazione_parole;
-    animation-duration: 3s;
+    animation-duration: 4.5s;
     animation-iteration-count: infinite;
-    animation-delay: 2s;
+    animation-delay: 3s;
     animation-timing-function: ease-in-out;
 
 }
@@ -90,7 +90,7 @@ main {
 @keyframes animazione_parole {
     
     0% {opacity: 0; transform: translate(0, -30px);}
-    50% {opacity: 1; transform: translate(0, 0);}
-    100% {opacity: 1; transform: translate(0, 30px);}
+    16% {opacity: 1; transform: translate(0, 0);}
+    33% {opacity: 0; transform: translate(0, 30px);}
 
 }
