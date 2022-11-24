@@ -36,12 +36,14 @@
 .container_4postit_sopra {
 
     display: flex;
+    flex-wrap: wrap;
 
 }
 
 .container_4postit_sotto {
 
     display: flex;
+    flex-wrap: wrap;
 
 }
 
