@@ -401,6 +401,12 @@ footer {
 
     }
 
+    .M {
+
+        display: none;
+
+    }
+
     #logo {
 
         width: 150px;
@@ -1038,5 +1044,15 @@ footer {
     align-items: center;
 
 }
+    
+}
+
+@media screen and (max-width: 767px){
+
+    .M {
+
+        display: none;
+
+    }
     
 }
