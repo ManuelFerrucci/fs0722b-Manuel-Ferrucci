@@ -1054,5 +1054,11 @@ footer {
         display: none;
 
     }
+
+    .header_li1, .header_li2, .header_li3 {
+
+        display: none;
+
+    }
     
 }
