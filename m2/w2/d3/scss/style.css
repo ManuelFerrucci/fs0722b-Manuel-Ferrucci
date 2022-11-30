@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+/* SIZING */
+/* % */
+/* FONT */
+/* PADDING - BORDER - MARGIN  */
+/* COLORS */
+.btn1 {
+  margin-top: 20px;
+  background-color: rgba(75, 193, 233, 0.916);
+  font-weight: 700;
+  border: 1px solid black;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.btn1:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.2);
+  border: none;
+}
+
+.btn2 {
+  margin-top: 20px;
+  background-color: rgba(75, 193, 233, 0.916);
+  font-weight: 700;
+  border: 1px solid black;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 50px;
+  transition: 0.5s ease-in-out;
+}
+.btn2:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.2);
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: rgba(255, 0, 0, 0.826);
+}
+
+header {
+  width: 100%;
+  height: 7vh;
+  background-color: white;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav img {
+  width: 50px;
+  transition: 0.5s ease-in-out;
+}
+header nav img:hover {
+  transform: scale(1.3);
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-left: 50px;
+  font-size: 0.8rem;
+  transition: 0.5s ease-in-out;
+}
+header nav ul li:hover {
+  color: rgba(255, 0, 0, 0.826);
+  transform: scale(1.3);
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 93vh;
+}
+main .primo_contenitore {
+  width: 50%;
+  margin-left: 100px;
+}
+main .primo_contenitore h1 {
+  font-size: 2rem;
+  transition: 0.5s ease-in-out;
+}
+main .primo_contenitore p {
+  font-size: 1rem;
+  transition: 0.5s ease-in-out;
+}
+main .primo_contenitore .text {
+  transition: 0.5s ease-in-out;
+}
+main .primo_contenitore .text:hover {
+  transform: scale(1.1) translateX(10px);
+}
+main .secondo_contenitore {
+  width: 50%;
+  margin-right: 100px;
+}
+main .secondo_contenitore img {
+  width: 100%;
+  opacity: 75%;
+  transition: 0.5s ease-in-out;
+}
+main .secondo_contenitore img:hover {
+  transform: scale(1.1) translateX(10px);
+  opacity: 100%;
+  filter: drop-shadow(10px 10px 5px black);
+}/*# sourceMappingURL=style.css.map */
