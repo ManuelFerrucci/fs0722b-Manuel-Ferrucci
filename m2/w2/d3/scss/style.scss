@@ -12,7 +12,7 @@
     list-style: none;
     box-sizing: border-box;
     font-family: $font-poppins;
-    font-size: 20px;
+    font-size: $little-little;
 
 }
 
@@ -54,7 +54,7 @@ header {
 
             & li {
 
-                margin-left: $large-space;
+                margin-left: $little;
                 font-size: $little-font-size;
                 transition: 0.5s ease-in-out;
 
@@ -84,7 +84,7 @@ main {
     & .primo_contenitore {
 
         width: $half;
-        margin-left: $big-space;
+        margin-left: $mid-little;
 
         & h1 {
 
@@ -118,18 +118,16 @@ main {
     & .secondo_contenitore {
 
         width: $half;
-        margin-right: $big-space;
+        margin-right: $mid-little;
 
         & img {
 
             width: $total;
-            opacity: $three-quarters;
             transition: 0.5s ease-in-out;
 
             &:hover {
 
                 transform: scale(1.1) translateX($minimal);
-                opacity: $total;
                 filter: drop-shadow(10px 10px 5px $color-black);
 
             }

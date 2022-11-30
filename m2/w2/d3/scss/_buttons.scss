@@ -1,7 +1,7 @@
 
 .btn1 {
 
-    margin-top: $little-little;
+    margin-top: $little;
     background-color: $color-lightblue;
     font-weight: $bold-font-weight;
     border: 1px solid $color-black;
@@ -15,6 +15,7 @@
         background-color: $color-green;
         color: $color-white;
         transform: scale(1.2);
+        filter: drop-shadow(5px 5px 3px $color-black);
         border: none;
 
     }
@@ -23,14 +24,14 @@
 
 .btn2 {
 
-    margin-top: $little-little;
+    margin-top: $little;
     background-color: $color-lightblue;
     font-weight: $bold-font-weight;
     border: 1px solid $color-black;
     color: $color-black;
     padding: $minimal;
     border-radius: $minimal;
-    margin-left: $large-space;
+    margin-left: $little;
     transition: 0.5s ease-in-out;
 
     &:hover {
@@ -38,8 +39,8 @@
         background-color: $color-green;
         color: $color-white;
         transform: scale(1.2);
+        filter: drop-shadow(5px 5px 3px $color-black);
         border: none;
-
 
     }
 
