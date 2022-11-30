@@ -138,4 +138,19 @@ footer {
     background-color: $color-white;
     height: 7vh;
 
+    & p {
+
+        font-size: $medium-font-size;
+        text-align: center;
+        padding-top: $minimal;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+
+            color: $color-red;
+
+        }
+
+    }
+
 }
