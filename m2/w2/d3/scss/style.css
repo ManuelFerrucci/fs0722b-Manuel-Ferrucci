@@ -90,7 +90,7 @@ header nav ul li:hover {
 main {
   display: flex;
   align-items: center;
-  height: 93vh;
+  height: 86vh;
 }
 main .primo_contenitore {
   width: 50%;
@@ -121,4 +121,9 @@ main .secondo_contenitore img {
 main .secondo_contenitore img:hover {
   transform: scale(1.1) translateX(10px);
   filter: drop-shadow(10px 10px 5px black);
+}
+
+footer {
+  background-color: white;
+  height: 7vh;
 }/*# sourceMappingURL=style.css.map */
