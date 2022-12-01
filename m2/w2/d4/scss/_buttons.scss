@@ -1,0 +1,32 @@
+
+.btn {
+
+    margin-top: $size_20;
+    background-color: $color-blue;
+    font-weight: $font_weight_700;
+    border: 1px solid $color-black;
+    color: $color-white;
+    padding: $size_10;
+    border-radius: $size_10;
+    margin-top: $size_20;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+
+        background-color: $color-red;
+        color: $color-white;
+        text-decoration: underline;
+        transform: scale(1.2);
+        filter: drop-shadow(5px 5px 3px $color-black);
+        border: none;
+
+    }
+
+    a {
+
+        color: inherit;
+
+    }
+
+}

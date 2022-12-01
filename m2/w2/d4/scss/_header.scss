@@ -1,0 +1,61 @@
+
+header {
+
+    width: $total;
+    height: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $color-white;
+    background-color: $color_blue;
+    font-weight: $font_weight_500;
+    border: 1px solid $color_blue;
+    transition: 0.5s ease-in-out; 
+
+    &:hover {
+
+        background-color: $color_red;
+        border: unset;
+        
+    }
+
+    nav {
+
+        width: $total;
+
+        ul {
+
+            display: flex;
+            justify-content: space-evenly;
+
+            li {
+
+                display: flex;
+                align-items: center;
+                transition: 0.5s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+
+                    text-decoration: underline;
+                    transform: scale(1.1);
+                    filter: drop-shadow(5px 5px 3px $color-black);
+                    border: none;
+            
+                }
+
+                a {
+
+                    color: $color-white;
+                    text-decoration: none;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+

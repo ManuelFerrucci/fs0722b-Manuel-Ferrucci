@@ -1,0 +1,53 @@
+
+.contenitore_main_aside {
+
+    display: flex;
+
+}
+
+main {
+
+    width: 66%;
+    margin: $margin_50;
+
+    h1 {
+
+        font-size: $font_size_2;
+
+    }
+
+    @for $spazio from 1 through 3 {
+    
+        .paragrafo#{$spazio} {
+    
+            margin-top: $spazio * $size_10;
+            opacity: $spazio * 0.33;
+            color: $color-black;
+    
+        }
+    
+    }
+
+    h2 {
+
+        font-size: $font_size_1_5;
+
+    }
+
+    .section {
+
+        .input-form-control {
+
+            border: 1px solid $color_blue;
+
+        }
+
+        .textarea-form-control {
+
+            border: 1px solid $color_black;
+
+        }
+
+    }
+
+}
