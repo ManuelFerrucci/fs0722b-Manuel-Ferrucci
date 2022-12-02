@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+/* SIZING */
+/* % */
+/* FONT */
+/* PADDING */
+/* BORDER */
+/* MARGIN */
+/* COLORS */
+.pulsante {
+  background-color: #7123f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+.pulsante:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(5px 5px 3px black);
+  border: none;
+}
+
+header .manuel_boot {
+  padding-left: 50px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+header .manuel_boot:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(5px 5px 3px black);
+  border: none;
+}
+header nav {
+  background-color: #7123f2;
+}
+header nav ul {
+  padding-right: 50px;
+}
+header nav ul li:nth-child(4),
+header nav ul li:nth-child(5),
+header nav ul li:nth-child(6),
+header nav ul li:nth-child(7) {
+  display: none;
+}
+header nav ul li {
+  transition: 0.5s ease-in-out;
+}
+header nav ul li:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  filter: drop-shadow(5px 5px 3px black);
+  border: none;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  header nav ul li:nth-child(4),
+header nav ul li:nth-child(5),
+header nav ul li:nth-child(6),
+header nav ul li:nth-child(7) {
+    display: block;
+  }
+}
+
+.manuel_section_1,
+.manuel_section_2,
+.manuel_section_3,
+.manuel_section_4 {
+  padding: 0 50px;
+}
+
+.manuel_section_1 {
+  background-image: url("../imgs/pexels-aleksandar-pasaric-325185.jpg");
+  padding-top: 30px;
+  height: 65vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.manuel_section_1 h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .manuel_section_1 h1 {
+    font-size: 50px;
+  }
+}
+.manuel_section_1 p {
+  font-size: 15px;
+}
+
+.manuel_section_2 {
+  background-color: #f6f5f6;
+}
+.manuel_section_2 div {
+  padding-top: 30px;
+  transition: 0.5s ease-in-out;
+}
+.manuel_section_2 div:hover {
+  transform: scale(1.2);
+}
+.manuel_section_2 h3 {
+  font-size: 30px;
+}
+.manuel_section_2 p {
+  font-size: 15px;
+}
+.manuel_section_2 .bi-briefcase-fill,
+.manuel_section_2 .bi-person-plus-fill,
+.manuel_section_2 .bi-binoculars-fill {
+  font-size: 40px;
+}
+
+.manuel_section_3 h3 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .manuel_section_3 h3 {
+    font-size: 50px;
+  }
+}
+.manuel_section_3 .partner_images {
+  transition: 0.5s ease-in-out;
+}
+.manuel_section_3 .partner_images:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(5px 5px 3px black);
+}
+
+.manuel_section_4 h3 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.manuel_section_4 p {
+  font-size: 15px;
+  margin-top: 50px;
+  padding: 0 50px;
+  transition: 0.5s ease-in-out;
+}
+.manuel_section_4 p:hover {
+  transform: scale(1.2);
+}
+.manuel_section_4 .feedback_img,
+.manuel_section_4 span {
+  margin-top: 20px;
+}
+.manuel_section_4 .feedback_img {
+  width: 100px;
+  border-radius: 100px;
+}
+.manuel_section_4 span {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #7123f2;
+  padding: 20px 50px 10px 50px;
+}
+footer h5,
+footer p,
+footer ul {
+  color: white;
+}
+footer h5 {
+  padding-top: 15px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+footer ul li {
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+footer ul li:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(5px 5px 3px black);
+}
+footer .elenchi p {
+  font-size: 22px;
+  transition: 0.5s ease-in-out;
+}
+footer .elenchi p:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: drop-shadow(5px 5px 3px black);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=style.css.map */

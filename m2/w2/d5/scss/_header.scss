@@ -1,0 +1,66 @@
+
+header {
+
+    .manuel_boot {
+
+        padding-left: $padding_50;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+
+            transform: scale(1.1);
+            filter: drop-shadow(5px 5px 3px $color-black);
+            border: none;
+            
+        }
+
+    }
+
+    nav {
+
+        background-color: $color_nav;
+
+        ul {
+
+            padding-right: $padding_50;
+
+            li:nth-child(4),
+            li:nth-child(5),
+            li:nth-child(6),
+            li:nth-child(7) {
+    
+                display: none;
+    
+            }
+
+            li {
+
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+
+                    text-decoration: underline;
+                    transform: scale(1.1);
+                    filter: drop-shadow(5px 5px 3px $color-black);
+                    border: none;
+            
+                }
+
+                a {
+
+                    text-decoration: none;
+    
+                    
+                }
+                
+            } 
+
+           
+        }
+    
+    }
+
+    @include nav_query;
+    
+}

@@ -1,0 +1,160 @@
+
+.manuel_section_1,
+.manuel_section_2,
+.manuel_section_3,
+.manuel_section_4 {
+
+    @include padding_main;
+
+}
+
+.manuel_section_1 {
+
+    background-image: url('../imgs/pexels-aleksandar-pasaric-325185.jpg');
+    padding-top: $padding_30;
+    height: 65vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+
+        @include testi_medi;
+        font-weight: $font_weight_400;
+
+        @media screen and (min-width: 768px) {
+
+            @include testi_grandi;
+            
+        }
+
+    }
+
+    p {
+
+        @include testi_piccoli;
+
+    }
+
+}
+
+.manuel_section_2 {
+
+    background-color: $color_section_2;
+
+    div {
+
+        padding-top: $padding_30;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+
+            transform: scale(1.2);
+
+        }
+
+    }
+
+    h3 {
+
+        @include testi_medi;
+
+    }
+    
+    p {
+
+        @include testi_piccoli;
+
+    }
+
+    .bi-briefcase-fill,
+    .bi-person-plus-fill,
+    .bi-binoculars-fill {
+    
+        @include icone_bootstrap;
+    
+    }
+
+}
+
+.manuel_section_3 {
+
+    h3 {
+
+        @include testi_semi_grandi;
+        font-weight: $font_weight_400;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+
+            @include testi_grandi;
+            
+        }
+
+    }
+
+    .partner_images {
+
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+
+            transform: scale(1.2);
+            filter: drop-shadow(5px 5px 3px $color-black);
+
+        }
+
+    }
+
+}
+
+.manuel_section_4 {
+
+    
+
+    h3 {
+
+        @include testi_grandi;
+        font-weight: $font_weight_400;
+
+    }
+
+    p {
+
+        @include testi_piccoli;
+        margin-top: $margin_50;
+        padding: $no_padding $padding_50;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+
+            transform: scale(1.2);
+
+        }
+
+
+    }
+
+    .feedback_img,
+    span {
+
+        margin-top: $margin_20;
+
+    }
+
+    .feedback_img {
+
+        width: $size_100;
+        border-radius: $size_100;
+
+    }
+
+    span {
+
+        @include testi_medi;
+        margin-bottom: $margin_50;
+
+    }
+
+}
+
+

@@ -1,0 +1,59 @@
+
+@mixin icone_bootstrap {
+    
+    font-size: $size_40;
+
+}
+
+@mixin testi_grandi {
+    
+    font-size: $size_50;
+
+}
+
+@mixin testi_semi_grandi {
+    
+    font-size: $size_40;
+
+}
+
+@mixin testi_medi {
+    
+    font-size: $size_30;
+
+}
+
+@mixin testi_semi_piccoli {
+    
+    font-size: $size_22;
+
+}
+
+@mixin testi_piccoli {
+    
+    font-size: $size_15;
+
+}
+
+@mixin padding_main {
+
+    padding: $no_padding $padding_50;
+    
+}
+
+@mixin nav_query {
+    
+    @media screen and (min-width: 768px) {
+
+        nav ul li:nth-child(4),
+        nav ul li:nth-child(5),
+        nav ul li:nth-child(6),
+        nav ul li:nth-child(7) {
+
+            display: block;
+
+        }
+        
+    }
+
+}

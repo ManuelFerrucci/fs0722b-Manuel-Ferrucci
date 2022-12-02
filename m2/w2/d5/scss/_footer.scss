@@ -1,0 +1,53 @@
+
+footer {
+
+    background-color: $color_nav;
+    padding: $padding_20 $padding_50 $padding_10 $padding_50;
+
+    h5,
+    p,
+    ul {
+
+        color: $color_white;
+
+    }
+
+    h5 {
+
+        padding-top: $padding_15;
+        font-weight: $font_weight_500;
+        font-size: $font_size_2;
+
+    }
+
+    ul li {
+
+        @include testi_piccoli;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+
+            transform: scale(1.2);
+            filter: drop-shadow(5px 5px 3px $color-black);
+
+        }
+
+    }
+
+    .elenchi p {
+
+        @include testi_semi_piccoli;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+
+            cursor: pointer;
+            transform: scale(1.2);
+            filter: drop-shadow(5px 5px 3px $color-black);
+            
+        }
+
+    }
+
+}
