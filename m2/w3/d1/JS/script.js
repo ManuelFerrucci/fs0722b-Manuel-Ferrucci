@@ -40,7 +40,7 @@ function svuotaTesto () {
 
 }
 
-bottone.addEventListener('click', () => {
+nuovoUser = bottone.addEventListener('click', () => {
     
     let valoreNome = document.createElement('p');
     nomeInTabella.append(valoreNome);
