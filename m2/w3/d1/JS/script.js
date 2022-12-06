@@ -1,13 +1,18 @@
+let nuovoUser = new User(nome, cognome, dataNascita);
 
-function User() {
+function User(x, y, z) {
 
-    this.nome = '';
-    this.cognome = '';
-    this.dataNascita = '';
+    this.nome = x;
+    this.cognome = y;
+    this.dataNascita = z;
+
+    this.mostraNomeCompleto = function() {
+
+        return this.nome + ' ' + this.cognome;
+
+    };
 
 }
-
-let nuovoUser = new User();
 
 function calcolaEta (valoreData) {
     
@@ -40,7 +45,9 @@ function svuotaTesto () {
 
 }
 
-nuovoUser = bottone.addEventListener('click', () => {
+bottone.addEventListener('click', (evento) => {
+
+    evento.preventDefault(); //serve a eliminare eventuli funzioni predefinite e fargli fare quello che dico io
     
     let valoreNome = document.createElement('p');
     nomeInTabella.append(valoreNome);
@@ -53,5 +60,4 @@ nuovoUser = bottone.addEventListener('click', () => {
 
     svuotaTesto();
         
-})
-
+});

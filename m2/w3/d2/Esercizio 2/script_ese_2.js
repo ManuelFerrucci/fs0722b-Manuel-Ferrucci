@@ -148,11 +148,11 @@ tastoPrecedente.addEventListener('click', (evento) => {
 
     evento.preventDefault;
 
-    if (idDue.innerHTML = user8.id) {
+    if (idDue.innerHTML == user8.id) {
 
         nomiTerzaPagina();
 
-    } else if (nomiTerzaPagina() = true) {
+    } else if (idDue.innerHTML == user6.id) {
 
         nomiSecondaPagina();
 
@@ -168,11 +168,11 @@ tastoSuccessivo.addEventListener('click', (evento) => {
 
     evento.preventDefault;
 
-    if (idDue.innerHTML = user2.id) {
+    if (idDue.innerHTML == user2.id) {
 
         nomiSecondaPagina();
 
-    } else if (nomiSecondaPagina() = true) {
+    } else if (idDue.innerHTML == user4.id) {
 
         nomiTerzaPagina();
 
