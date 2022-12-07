@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatore</title>
+    <style>
+        body {height: 90vh; display: flex; justify-content: center; align-items: center;}
+        p {font-weight: bold;}
+    </style>
+</head>
+
+<body>
+
+    <p class="orario"></p>
+    <p class="messaggio"></p>
+
+    <script>
+
+        function secondsCounter() {
+
+            let testoSecondi = document.querySelector('.orario');
+
+            if (typeof (Storage) != undefined) {
+
+                if (! sessionStorage.secondscount) {
+
+                    sessionStorage.secondscount = 0;                    
+
+                };
+
+                setInterval(() => {
+
+                    sessionStorage.secondscount = Number(sessionStorage.secondscount) + 1;
+
+                    testoSecondi.innerHTML = "Sono passati " + sessionStorage.secondscount + " secondi da quando hai iniziato questa sessione";
+
+                }, 1000);
+
+                testoSecondi.innerHTML = "Sono passati " + sessionStorage.secondscount + " secondi da quando hai iniziato questa sessione";
+
+            } else {
+
+                document.querySelector(".messaggio").innerHTML = "Il tuo browser non supporta Web storage...";
+
+            }
+        };
+
+        secondsCounter();
+
+    </script>
+
+</body>
+
+</html>

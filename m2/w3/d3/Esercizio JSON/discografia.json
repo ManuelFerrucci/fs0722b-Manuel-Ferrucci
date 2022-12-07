@@ -1,0 +1,137 @@
+{
+
+    "gruppoMusicale": "Linkin Park",
+    "annoFondazione": 1996,
+    "discografia": [
+
+        {
+
+            "nomeAlbum": "Hybrid Theory",
+            "annoPubblicazione": 2000,
+            "stiliMusicali": [
+                
+                {
+                    
+                    "stileMusicale1": "Nu Metal",
+                    "stileMusicale2": "Alternative metal",
+                    "stileMusicale3": "Rap metal"
+                    
+                }
+
+            ],
+            
+            "tracce": 12,
+            "listaTracce": [
+
+                {
+
+                    "nome": "Papercut",
+                    "durata": "3 minuti e 5 secondi"
+
+                },
+
+                {
+
+                    "nome": "In the End",
+                    "durata": "3 minuti e 36 secondi"
+
+                },
+
+                {
+
+                    "nome": "Crawling",
+                    "durata": "3 minuti e 29 secondi"
+
+                }
+
+            ]
+        
+        },
+        {
+
+            "nomeAlbum": "Meteora",
+            "annoPubblicazione": 2003,
+            "stiliMusicali": [
+                
+                {
+                    
+                    "stileMusicale1": "Nu Metal",
+                    "stileMusicale2": "Alternative metal",
+                    "stileMusicale3": "Rap metal"
+                    
+                }
+
+            ],
+            
+            "tracce": 13,
+            "listaTracce": [
+
+                {
+
+                    "nome": "Lying from You ",
+                    "durata": "2 minuti e 55 secondi"
+
+                },
+
+                {
+
+                    "nome": "Faint",
+                    "durata": "2 minuti e 42 secondi"
+
+                },
+
+                {
+
+                    "nome": "Numb",
+                    "durata": "3 minuti e 5 secondi"
+
+                }
+
+            ]
+        
+        },
+        {
+
+            "nomeAlbum": "Minutes to Midnight",
+            "annoPubblicazione": 2007,
+            "stiliMusicali": [
+                
+                {
+                    
+                    "stileMusicale1": "Rock alternativo"
+                    
+                }
+
+            ],
+            
+            "tracce": 12,
+            "listaTracce": [
+
+                {
+
+                    "nome": "Given Up",
+                    "durata": "3 minuti e 9 secondi"
+
+                },
+
+                {
+
+                    "nome": "Leave Out All the Rest",
+                    "durata": "3 minuti e 29 secondi"
+
+                },
+
+                {
+
+                    "nome": "What I've Done",
+                    "durata": "3 minuti e 25 secondi"
+
+                }
+
+            ]
+        
+        }
+
+    ]
+    
+}
