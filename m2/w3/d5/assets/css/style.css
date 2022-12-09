@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+/* SIZE */
+/* FONT WEIGHT */
+body {
+  height: 100vh;
+  background-color: #f2f0f2;
+  display: flex;
+  justify-content: center;
+}
+body main {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #e3e2e3;
+  height: 270px;
+  width: 270px;
+  transition: 0.5s ease-in-out;
+}
+body main .card:hover {
+  transform: scale(1.5);
+  filter: drop-shadow(5px 5px 5px #e3e2e3);
+}
+body main .card img {
+  background-color: #f2f0f2;
+  padding: 15px;
+  border-radius: 50px;
+  width: 90px;
+  height: 90px;
+}
+body main .card p, body main .card a {
+  font-weight: 500;
+}
+body main .card p {
+  font-size: 1.4rem;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+}
+body main .card p:hover {
+  color: #f3ba11;
+}
+body main .card a {
+  cursor: pointer;
+  color: #f3ba11;
+  transition: 0.5s ease-in-out;
+}
+body main .card a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=style.css.map */
