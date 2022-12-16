@@ -1,0 +1,451 @@
+@import "variabili_album";
+@import "mixin";
+
+.lh-0{line-height: 0;}
+.color-green-text{color :rgb(29, 185, 85)}
+
+.color-menu-down{
+    border: none;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 1px 0px 16px rgba(0, 0, 0, 0.562);
+    width: 235px;
+    i{
+        font-size: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    li{
+        color: white;
+        a{
+            color: white;
+            font-size: 12px;
+            &:hover{
+                background-color: rgb(62, 62, 62);
+                color: white;
+                border-radius: 2px;
+            }
+        }
+        &:hover{
+            background-color: rgb(62, 62, 62);
+            color: white;
+            border-radius: 2px;
+        }
+    }
+}
+
+main{
+    background-color: rgb(56, 56, 56);
+}
+
+.line-border{
+    @include borderDebug();
+}
+
+#img-profile-size{
+    background-color: aqua;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+}
+
+.container-section-album{
+    max-width: $container_max_width;
+    margin: 0 auto;
+    height: max-content;
+    background-image: linear-gradient(rgb(230, 199, 81), rgb(107, 92, 39));
+    color:white;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.button-menu-song{
+    margin-left: 20px;
+    i{
+        font-size: 22px;
+    }
+}
+
+.box-profile{
+    background-color: black;
+    padding: 1px;
+    border-radius: 30px;
+    h6{
+       font-size: 10px;
+       text-align: right;
+       margin: 0;
+       margin-left: 8px;
+    }
+    div{
+        i{
+            font-size: 12px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+    li{
+        list-style: none;
+    }
+    ul{
+        border: none;
+        background-color: rgb(40, 40, 40);
+        box-shadow: 1px 0px 16px rgba(0, 0, 0, 0.562);
+        width: 235px;
+        li{
+            color: white;
+            a{
+                color: white;
+                font-size: 10px;
+                &:hover{
+                    background-color: rgb(62, 62, 62);
+                    color: white;
+                    border-radius: 2px;
+                }
+            }
+            &:hover{
+                background-color: rgb(62, 62, 62);
+                color: white;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+.container-max-width{
+    max-width: $container_max_width;
+}
+
+.postion-right{
+    right: 0;
+}
+
+
+
+.container-next-album-profile{
+    max-width: $container_max_width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button{
+        border:  none;
+        background-color: rgba(0, 0, 0, 0.404);
+        border-radius: 100%;
+        margin-right: 10px;
+        i {
+            color: white;
+        }
+    }
+}
+
+.container-information-album{
+    .d-flex{
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+}
+
+.image-box{
+    height: 200px;
+    width: 200px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: white;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.404);
+}
+
+
+
+.container-information-band{
+    align-items: center;
+    div{
+        p{
+            margin: 0;
+            margin-right: 5px;
+        }
+        span {
+            margin-left: 5px;
+        }
+
+    }
+    .image-artist{
+        height: 25px;
+        width: 25px;
+        background-color: aqua;
+        border-radius: 100%;
+    }
+}
+
+.big-h1{
+    font-size: 70px;
+}
+
+.small-h1{
+    font-size: 26px;
+}
+
+.transition-animation{
+    display: block;
+    visibility: hidden;
+    transition: 0.5s;
+    visibility: visible;
+
+}
+
+.container-song{
+    max-width: $container_max_width;
+    background-color: rgba(0, 0, 0, 0.308);backdrop-filter: blur(5px);
+}
+
+.container-button-list-song{
+    margin-left: 10px;
+    margin-right: 10px;
+    div{
+        i{
+            color: rgb(224, 224, 224);
+            font-size: 32px;
+        }
+    }
+}
+
+#button-play-d-lg, #button-play-d-md{
+
+    background-color: black;
+    border-radius: 50px;
+    i{
+        color: rgb(30, 215, 96);
+        font-size: 56px;
+        line-height: 0px;
+        &:hover{
+            transition: 0.2s;
+            color: white;
+        }
+    }
+    height: 56px;
+    width: 56px;
+}
+
+#button-play-mini{
+
+    background-color: black;
+    border-radius: 30px;
+    i{
+        color: rgb(30, 215, 96);
+        font-size: 45px;
+        line-height: 0px;
+        &:hover{
+            transition: 0.2s;
+            color: white;
+        }
+    }
+    height: 45x;
+    width: 45px;
+}
+
+
+
+.sub-container-list-song{
+    max-width: $sub_container_list_song_max_width;
+
+    .box-contaier-song{
+        &:hover{
+            background-color: rgb(49, 49, 49);
+            border-radius: 5px;
+        }
+         #name-artist{
+            color: rgb(178, 178, 178);
+            font-size: 10px;
+            text-decoration: none;
+            &:hover{
+                cursor: pointer;
+                text-decoration:underline;
+            }
+        }
+    }
+}
+
+.text-header-list{
+    color: rgb(178, 178, 178);
+    display: flex;
+    align-items: center;
+}
+.border-button-list{
+    border-bottom: 1px solid rgba(178, 178, 178, 0.486);
+}
+
+#index-number-list-none{
+    font-size: 16px;
+    margin: 18px;
+}
+
+#value-number-song{
+    font-size: 16px;
+    margin: 12px;
+    width: 18px;
+    text-align: center;
+
+}
+
+#image-albun{
+    height: 100%;
+}
+
+#img-profile-artist{
+    height: 100%;
+    border-radius: 100%;
+}
+
+.cell-container-song{
+    display: flex;
+}
+
+.color-text-sub-list{
+    color: rgb(178, 178, 178); 
+}
+
+.container-text-info-song{
+    font-size: 10px;
+}
+
+#duration-song{
+    font-size: 10px;
+    text-align: right;
+    color: rgb(178, 178, 178); 
+}
+
+#title-song{
+    font-size: 12px;
+    color: white;
+}
+
+#duration-value{
+    font-size: 10px;
+}
+
+.text-size-10{
+    font-size: 10px;
+}
+
+.slider_container {
+    width: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Modify the appearance of the slider /
+  .seek_slider,
+  .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  / Modify the appearance of the slider thumb */
+  .seek_slider::-webkit-slider-thumb,
+  .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .seek_slider:hover,
+  .volume_slider:hover {
+    opacity: 1.0;
+  }
+
+  .seek_slider {
+    width: 60%;
+  }
+
+  .volume_slider {
+    width: 30%;
+  }
+
+  .current-time,
+  .total-duration {
+    padding: 10px;
+  }
+
+  i.fa-volume-down,
+  i.fa-volume-up {
+    padding: 10px;
+  }
+
+  i.fa-play-circle,
+  i.fa-pause-circle,
+  i.fa-step-forward,
+  i.fa-step-backward {
+    cursor: pointer;
+  }
+
+  #contenitore-header{
+    position: fixed; 
+}
+.primi_tre  li  a{
+            text-decoration: none;
+            color: white;
+        }
+
+  @media screen and(max-width: 768px) {
+
+    #contenitore-totale{
+        flex-direction: column-reverse;
+        #riproduttore-mobile{
+            background-color: rgb(40, 40, 40);
+        }
+    
+        #contenitore-header{
+            position: unset;
+        }
+        #tendina-profilo{
+            display: none;
+        }
+        #titolo-album{
+            flex-direction: column;
+            .image-box{
+                margin: 0 auto;
+                width: unset;
+                height: unset;
+            }
+            #testi-titolo{
+                #category{
+                    display: none;
+                }
+
+            }
+        }
+        .container-information-band{
+            flex-direction: column;
+            align-items: unset;
+            #total-song{
+                display: none;
+            }
+            #total-Timer{
+                display: none;
+            }
+        }
+        #button-play-d-lg{
+            display: none;
+        }
+        #intestazione-tabella{
+            display: none;
+        }
+    }
+
+  }
