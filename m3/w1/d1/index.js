@@ -13,10 +13,10 @@ function confrontaNumeri() {
         console.log('Il numero generato e quello di Mario sono uguali');
     }
     else {
-        if ((numeroCasuale != numeroFrancesco) && (Math.abs(numeroCasuale - numeroFrancesco) < Math.abs(numeroCasuale - numeroMario))) {
+        if (((numeroCasuale != numeroFrancesco) && (numeroCasuale != numeroMario)) && (Math.abs(numeroCasuale - numeroFrancesco) < Math.abs(numeroCasuale - numeroMario))) {
             console.log('Il numero uscito non è quello di Francesco, ma si avvicina di più');
         }
-        else if ((numeroCasuale != numeroMario) && (Math.abs(numeroCasuale - numeroFrancesco) > Math.abs(numeroCasuale - numeroMario))) {
+        else if (((numeroCasuale != numeroFrancesco) && (numeroCasuale != numeroMario)) && (Math.abs(numeroCasuale - numeroFrancesco) > Math.abs(numeroCasuale - numeroMario))) {
             console.log('Il numero uscito non è quello di Mario, ma si avvicina di più');
         }
         else {
