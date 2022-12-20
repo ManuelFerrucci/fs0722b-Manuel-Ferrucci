@@ -1,0 +1,46 @@
+@import 'variabili';
+
+main {
+    margin-top: $size_60;
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .section_1,
+    .section_2 {
+        text-align: center;
+        width: $half;
+        height: $quarter;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.8;
+        transition: 0.5s ease-in-out;
+
+        h2 {
+            font-size: $font_size_2_2;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            opacity: 1;
+            transition: 0.5s ease-in-out;
+            filter: drop-shadow($size_10 $size_10 $size_5 $color_black);
+
+            .saldo_attuale_anna,
+            .interessi_anna,
+            .saldo_attuale_mario {
+                color: $color_green;
+            }
+        }
+
+        .section_testi {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: $font_size_1_7;
+            font-weight: $font_weight_500;
+        }
+    }
+}

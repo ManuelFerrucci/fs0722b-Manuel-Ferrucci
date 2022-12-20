@@ -1,0 +1,15 @@
+@import 'variabili';
+
+header {
+    h1 {
+        margin-top: $size_50;
+        font-size: $font_size_4;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1) rotate(-5deg);
+            color: $color_green;
+            filter: drop-shadow($size_10 $size_10 $size_5 $color_black);
+        }
+    }
+}
