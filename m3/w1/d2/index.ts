@@ -62,9 +62,3 @@ MotherAccount.twoDeposit();
 //console.log(MotherAccount);
 //MotherAccount.addInterest(); //decommenta per applicare gli interessi
 console.log(MotherAccount);
-
-let saldo_anna_html = String(MotherAccount.balanceInit);
-let saldo_mario_html = String(MotherAccount.balanceInit);
-
-let saldo_attuale_mario: HTMLElement = <HTMLElement>document.querySelector('.saldo_attuale_mario');
-let saldo_attuale_anna: HTMLElement = <HTMLElement>document.querySelector('.saldo_attuale_anna');
