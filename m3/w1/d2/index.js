@@ -55,3 +55,7 @@ MotherAccount.twoDeposit();
 //console.log(MotherAccount);
 //MotherAccount.addInterest(); //decommenta per applicare gli interessi
 console.log(MotherAccount);
+var saldo_anna_html = String(MotherAccount.balanceInit);
+var saldo_mario_html = String(MotherAccount.balanceInit);
+var saldo_attuale_mario = document.querySelector('.saldo_attuale_mario');
+var saldo_attuale_anna = document.querySelector('.saldo_attuale_anna');
