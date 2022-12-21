@@ -52,28 +52,25 @@ function variabileIrpef() {
     var result = (parseInt(fatturato.value) <= 15000) ? tassaIrpef = 0.23 : (parseInt(fatturato.value) >= 15001) && (parseInt(fatturato.value) <= 28000) ? tassaIrpef = 0.25 : (parseInt(fatturato.value) >= 28001) && (parseInt(fatturato.value) <= 50000) ? tassaIrpef = 0.35 : tassaIrpef = 0.43;
     return tassaIrpef;
 }
-button_resetta_importo.addEventListener('click', function () {
+function resettaImporti() {
     fatturato.value = '';
+    tasse_inps.innerHTML = '';
+    tasse_irpef.innerHTML = '';
+    totale_tasse.innerHTML = '';
+    reddito_netto.innerHTML = '';
+}
+button_resetta_importo.addEventListener('click', function () {
+    resettaImporti();
 });
-function calcolaTasseInps() {
-    var calcoloTasseInps = parseInt(fatturato.value) * (0.33);
-    tasse_inps.innerHTML = calcoloTasseInps;
-}
-function calcolaTasseIrpef() {
-    var calcoloTasseIrpef = parseInt(fatturato.value) * (0.23);
-    tasse_irpef.innerHTML = calcoloTasseIrpef;
-}
-function calcolaTasseTotali() {
-    var calcoloTasseTotali = parseInt(fatturato.value) * (0.47);
-    totale_tasse.innerHTML = calcoloTasseTotali;
-}
 function calcoli() {
     var calcoloTasseInps = parseInt(fatturato.value) * (0.33);
     tasse_inps.innerHTML = calcoloTasseInps;
     var calcoloTasseIrpef = parseInt(fatturato.value) * (0.23);
     tasse_irpef.innerHTML = calcoloTasseIrpef;
-    var calcoloTasseTotali = parseInt(fatturato.value) * (0.47);
+    var calcoloTasseTotali = parseInt(fatturato.value) * (0.65);
     totale_tasse.innerHTML = calcoloTasseTotali;
+    var totaleNetto = parseInt(fatturato.value) - parseInt(calcoloTasseTotali);
+    reddito_netto.innerHTML = totaleNetto;
 }
 button_calcola.addEventListener('click', function () {
     calcoli();
