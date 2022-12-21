@@ -1,0 +1,109 @@
+@import 'variabili';
+
+main {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 3rem;
+        margin: 15px 0;
+    }
+
+    #contenitore_input_select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #contenitore1 {
+
+            #tipo_lavoro {
+                width: 500px;
+                height: 50px;
+                border-radius: 20px;
+                text-align: center;
+                font-size: 1.5rem;
+                margin-bottom: 25px;
+                cursor: pointer;
+            }
+        }
+
+        #contenitore2 {
+            display: flex;
+            align-items: center;
+
+            #fatturato {
+                width: 360px;
+                height: 75px;
+                border-radius: 20px;
+                text-align: center;
+                font-size: 1.7rem;
+            }
+
+            #button_resetta_importo {
+                height: 40px;
+                font-weight: 500;
+                border: 1px solid green;
+                padding: 5px 10px;
+                margin-left: 10px;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+        }
+
+        #button_calcola {
+            width: 50%;
+            font-weight: 700;
+            font-size: 2rem;
+            background-color: rgb(52, 236, 52);
+            border: 1px solid green;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 25px 0 50px 0;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background-color: rgb(36, 185, 36);
+            }
+        }
+    }
+
+    #risultati {
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+
+            span {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+        }
+
+        #tasse_inps,
+        #tasse_irpef,
+        #totale_tasse {
+            color: red;
+        }
+
+        #tasse_inps,
+        #tasse_irpef {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        #totale_tasse {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        #reddito_netto {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: green;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+main {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main h1 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+main #contenitore_input_select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #contenitore_input_select #contenitore1 #tipo_lavoro {
+  width: 500px;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+main #contenitore_input_select #contenitore2 {
+  display: flex;
+  align-items: center;
+}
+main #contenitore_input_select #contenitore2 #fatturato {
+  width: 360px;
+  height: 75px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.7rem;
+}
+main #contenitore_input_select #contenitore2 #button_resetta_importo {
+  height: 40px;
+  font-weight: 500;
+  border: 1px solid green;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+main #contenitore_input_select #button_calcola {
+  width: 50%;
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: rgb(52, 236, 52);
+  border: 1px solid green;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin: 25px 0 50px 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+main #contenitore_input_select #button_calcola:hover {
+  background-color: rgb(36, 185, 36);
+}
+main #risultati p {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+main #risultati p span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+main #risultati #tasse_inps,
+main #risultati #tasse_irpef,
+main #risultati #totale_tasse {
+  color: red;
+}
+main #risultati #tasse_inps,
+main #risultati #tasse_irpef {
+  font-size: 2rem;
+  font-weight: 500;
+}
+main #risultati #totale_tasse {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+main #risultati #reddito_netto {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: green;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
