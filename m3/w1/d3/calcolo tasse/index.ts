@@ -47,12 +47,11 @@ let reddito_netto = <HTMLSpanElement>document.querySelector('#reddito_netto');
 let Negoziante = new Lavoratore(0.33,0.23,1,fatturato);
 let Imprenditore = new Lavoratore(0.33,0.35,2,fatturato);
 let Ingegnere = new Lavoratore(0.33,0.23,3,fatturato);
-console.log(Ingegnere.redditoAnnuoLordo);
 
 let tassaIrpef;
 function variabileIrpef() {
     let result:number = (parseInt(fatturato.value) <= 15000)? tassaIrpef = 0.23 : (parseInt(fatturato.value) >= 15001) && (parseInt(fatturato.value) <= 28000)? tassaIrpef = 0.25 : (parseInt(fatturato.value) >= 28001) && (parseInt(fatturato.value) <= 50000)? tassaIrpef = 0.35 : tassaIrpef = 0.43;
-    return tassaIrpef;
+    return tassaIrpef = result;
 }
 
 function resettaImporti() {
@@ -62,11 +61,6 @@ function resettaImporti() {
     totale_tasse.innerHTML = '';
     reddito_netto.innerHTML = '';
 }
-
-button_resetta_importo.addEventListener('click', () => {
-    resettaImporti();
-})
-
 function calcoli() {
     let calcoloTasseInps:any = parseInt(fatturato.value)*(0.33);
     tasse_inps.innerHTML = calcoloTasseInps;
@@ -81,6 +75,9 @@ function calcoli() {
     reddito_netto.innerHTML = totaleNetto;
 }
 
+button_resetta_importo.addEventListener('click', () => {
+    resettaImporti();
+})
 button_calcola.addEventListener('click', () => {
     calcoli();
 });
@@ -99,5 +96,3 @@ button_calcola.addEventListener('click', () => {
 //3. Ingegnere informatico - cod 3 = 78%
 
 //aliquota lavoratori autonomi INPS = 33%
-
-

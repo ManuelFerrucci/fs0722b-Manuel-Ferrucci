@@ -46,7 +46,6 @@ var reddito_netto = document.querySelector('#reddito_netto');
 var Negoziante = new Lavoratore(0.33, 0.23, 1, fatturato);
 var Imprenditore = new Lavoratore(0.33, 0.35, 2, fatturato);
 var Ingegnere = new Lavoratore(0.33, 0.23, 3, fatturato);
-console.log(Ingegnere.redditoAnnuoLordo);
 var tassaIrpef;
 function variabileIrpef() {
     var result = (parseInt(fatturato.value) <= 15000) ? tassaIrpef = 0.23 : (parseInt(fatturato.value) >= 15001) && (parseInt(fatturato.value) <= 28000) ? tassaIrpef = 0.25 : (parseInt(fatturato.value) >= 28001) && (parseInt(fatturato.value) <= 50000) ? tassaIrpef = 0.35 : tassaIrpef = 0.43;
