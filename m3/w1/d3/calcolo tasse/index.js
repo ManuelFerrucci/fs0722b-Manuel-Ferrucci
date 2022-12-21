@@ -67,7 +67,7 @@ function calcoli() {
     tasse_inps.innerHTML = calcoloTasseInps;
     var calcoloTasseIrpef = parseInt(fatturato.value) * (0.23);
     tasse_irpef.innerHTML = calcoloTasseIrpef;
-    var calcoloTasseTotali = parseInt(fatturato.value) * (0.58);
+    var calcoloTasseTotali = parseInt(fatturato.value) * (0.75);
     totale_tasse.innerHTML = calcoloTasseTotali;
     var totaleNetto = parseInt(fatturato.value) - parseInt(calcoloTasseTotali);
     reddito_netto.innerHTML = totaleNetto;

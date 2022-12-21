@@ -74,7 +74,7 @@ function calcoli() {
     let calcoloTasseIrpef:any = parseInt(fatturato.value)*(0.23);
     tasse_irpef.innerHTML = calcoloTasseIrpef;
 
-    let calcoloTasseTotali:any = parseInt(fatturato.value)*(0.58);
+    let calcoloTasseTotali:any = parseInt(fatturato.value)*(0.75);
     totale_tasse.innerHTML = calcoloTasseTotali;
 
     let totaleNetto:any = parseInt(fatturato.value) - parseInt(calcoloTasseTotali);
