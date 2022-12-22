@@ -77,15 +77,21 @@ let datiSorgente = fetch('/JSON/Abbigliamento.json')
         //Maglione.getSaldoCapo();          //decommentare per visualizzare in console il solo importo del saldo
         //Maglia.getSaldoCapo();            //decommentare per visualizzare in console il solo importo del saldo
 
-        Cardigan.getAcquistoCapo();
-        Maglietta.getAcquistoCapo();
-        Felpa.getAcquistoCapo();
-        Maglione.getAcquistoCapo();
-        Maglia.getAcquistoCapo();
+        //Cardigan.getAcquistoCapo();       //decommentare per visualizzare in console l'importo del saldo e il prezzo d'acquisto
+        //Maglietta.getAcquistoCapo();      //decommentare per visualizzare in console l'importo del saldo e il prezzo d'acquisto
+        //Felpa.getAcquistoCapo();          //decommentare per visualizzare in console l'importo del saldo e il prezzo d'acquisto
+        //Maglione.getAcquistoCapo();       //decommentare per visualizzare in console l'importo del saldo e il prezzo d'acquisto
+        //Maglia.getAcquistoCapo();         //decommentare per visualizzare in console l'importo del saldo e il prezzo d'acquisto
 
 
 
-        /////////////////// HTML /////////////////////
+
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////                   HTML                   //////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
         let nome_capo_1 = <HTMLHeadingElement>document.querySelector('#nome_capo_1');
         let nome_capo_2 = <HTMLHeadingElement>document.querySelector('#nome_capo_2');
@@ -93,17 +99,17 @@ let datiSorgente = fetch('/JSON/Abbigliamento.json')
         let nome_capo_4 = <HTMLHeadingElement>document.querySelector('#nome_capo_4');
         let nome_capo_5 = <HTMLHeadingElement>document.querySelector('#nome_capo_5');
 
-        let prezzo_pieno_1: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_1');
-        let prezzo_pieno_2: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_2');
-        let prezzo_pieno_3: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_3');
-        let prezzo_pieno_4: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_4');
-        let prezzo_pieno_5: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_5');
+        let prezzo_pieno_1 = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_1');
+        let prezzo_pieno_2 = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_2');
+        let prezzo_pieno_3 = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_3');
+        let prezzo_pieno_4 = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_4');
+        let prezzo_pieno_5 = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_5');
 
-        let prezzo_scontato_1: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_1');
-        let prezzo_scontato_2: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_2');
-        let prezzo_scontato_3: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_3');
-        let prezzo_scontato_4: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_4');
-        let prezzo_scontato_5: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_5');
+        let prezzo_scontato_1 = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_1');
+        let prezzo_scontato_2 = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_2');
+        let prezzo_scontato_3 = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_3');
+        let prezzo_scontato_4 = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_4');
+        let prezzo_scontato_5 = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_5');
 
         nome_capo_1.innerHTML = data[0].capo;
         nome_capo_2.innerHTML = data[1].capo;
@@ -117,10 +123,10 @@ let datiSorgente = fetch('/JSON/Abbigliamento.json')
         prezzo_pieno_4.innerHTML = '€ ' + Maglione.prezzoivainclusa;
         prezzo_pieno_5.innerHTML = '€ ' + Maglia.prezzoivainclusa;
 
-        prezzo_scontato_1.innerHTML = '€ ' + Cardigan.getAcquistoCapo();
-        prezzo_scontato_2.innerHTML = '€ ' + Maglietta.getAcquistoCapo();
-        prezzo_scontato_3.innerHTML = '€ ' + Felpa.getAcquistoCapo();
-        prezzo_scontato_4.innerHTML = '€ ' + Maglione.getAcquistoCapo();
-        prezzo_scontato_5.innerHTML = '€ ' + Maglia.getAcquistoCapo();
+        prezzo_scontato_1.innerHTML = '€ ' + Cardigan.getAcquistoCapo();    //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
+        prezzo_scontato_2.innerHTML = '€ ' + Maglietta.getAcquistoCapo();   //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
+        prezzo_scontato_3.innerHTML = '€ ' + Felpa.getAcquistoCapo();       //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
+        prezzo_scontato_4.innerHTML = '€ ' + Maglione.getAcquistoCapo();    //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
+        prezzo_scontato_5.innerHTML = '€ ' + Maglia.getAcquistoCapo();      //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
 
     });
