@@ -1,1 +1,24 @@
 @import 'variabili';
+
+main {
+    width: $half;
+
+    .splide {
+        margin-top: $size_50;
+
+        .splide__track {
+
+            .splide__list {
+
+                .splide__slide {
+                    height: 50vh;
+                    background-color: $color_grigio_custom_2;
+                    font-size: $font_size_2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
