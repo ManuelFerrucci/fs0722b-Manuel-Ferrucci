@@ -53,7 +53,7 @@ class capoAbbigliamento implements Abbigliamento {
 }
 
 
-let datiSorgente = fetch('/JSON/Abbigliamento.json')
+let sorgente = fetch('/JSON/Abbigliamento.json')
     .then((response) => response.json())
     .then((data) => {
 
@@ -126,7 +126,7 @@ let datiSorgente = fetch('/JSON/Abbigliamento.json')
         prezzo_scontato_1.innerHTML = '€ ' + Cardigan.getAcquistoCapo();    //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
         prezzo_scontato_2.innerHTML = '€ ' + Maglietta.getAcquistoCapo();   //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
         prezzo_scontato_3.innerHTML = '€ ' + Felpa.getAcquistoCapo();       //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
-        prezzo_scontato_4.innerHTML = '€ ' + Maglione.getAcquistoCapo();    //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
-        prezzo_scontato_5.innerHTML = '€ ' + Maglia.getAcquistoCapo();      //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
+        prezzo_scontato_4.innerHTML = '€ ' + Maglione.getAcquistoCapo();       //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
+        prezzo_scontato_5.innerHTML = '€ ' + Maglia.getAcquistoCapo();       //verrà visualizzato volutamente anche in console, perché il metodo richiama i console.log
 
     });

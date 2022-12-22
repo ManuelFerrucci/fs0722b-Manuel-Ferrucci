@@ -1,7 +1,7 @@
 @import 'variabili';
 
 main {
-    width: $size_350;
+    width: $size_400;
 
     .splide {
         margin-top: $size_50;
@@ -29,6 +29,10 @@ main {
                     .prezzo_pieno {
                         opacity: 0.5;
                         text-decoration: line-through;
+                    }
+
+                    .prezzo_scontato {
+                        color: $color_green;
                     }
                 }
             }

@@ -24,7 +24,7 @@ var capoAbbigliamento = /** @class */ (function () {
     };
     return capoAbbigliamento;
 }());
-var datiSorgente = fetch('/JSON/Abbigliamento.json')
+var sorgente = fetch('/JSON/Abbigliamento.json')
     .then(function (response) { return response.json(); })
     .then(function (data) {
     //console.log(data);                  //decommentare per visualizzare in console

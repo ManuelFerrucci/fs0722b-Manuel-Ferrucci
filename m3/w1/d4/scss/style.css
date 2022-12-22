@@ -23,7 +23,7 @@ header h1 {
 /* FONT WEIGHT */
 /* COLORS */
 main {
-  width: 350px;
+  width: 400px;
 }
 main .splide {
   margin-top: 50px;
@@ -46,6 +46,9 @@ main .splide .splide__track .splide__list .splide__slide img {
 main .splide .splide__track .splide__list .splide__slide .prezzo_pieno {
   opacity: 0.5;
   text-decoration: line-through;
+}
+main .splide .splide__track .splide__list .splide__slide .prezzo_scontato {
+  color: green;
 }
 
 * {
