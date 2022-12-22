@@ -4,5 +4,8 @@ header {
     h1 {
         color: $color_white;
         margin-top: $size_30;
+        text-align: center;
+        padding: $no_size $size_50;
+        text-shadow: 5px 5px 5px $color_black;
     }
 }

@@ -83,4 +83,44 @@ let datiSorgente = fetch('/JSON/Abbigliamento.json')
         Maglione.getAcquistoCapo();
         Maglia.getAcquistoCapo();
 
+
+
+        /////////////////// HTML /////////////////////
+
+        let nome_capo_1 = <HTMLHeadingElement>document.querySelector('#nome_capo_1');
+        let nome_capo_2 = <HTMLHeadingElement>document.querySelector('#nome_capo_2');
+        let nome_capo_3 = <HTMLHeadingElement>document.querySelector('#nome_capo_3');
+        let nome_capo_4 = <HTMLHeadingElement>document.querySelector('#nome_capo_4');
+        let nome_capo_5 = <HTMLHeadingElement>document.querySelector('#nome_capo_5');
+
+        let prezzo_pieno_1: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_1');
+        let prezzo_pieno_2: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_2');
+        let prezzo_pieno_3: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_3');
+        let prezzo_pieno_4: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_4');
+        let prezzo_pieno_5: any = <HTMLParagraphElement>document.querySelector('#prezzo_pieno_5');
+
+        let prezzo_scontato_1: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_1');
+        let prezzo_scontato_2: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_2');
+        let prezzo_scontato_3: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_3');
+        let prezzo_scontato_4: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_4');
+        let prezzo_scontato_5: any = <HTMLParagraphElement>document.querySelector('#prezzo_scontato_5');
+
+        nome_capo_1.innerHTML = data[0].capo;
+        nome_capo_2.innerHTML = data[1].capo;
+        nome_capo_3.innerHTML = data[2].capo;
+        nome_capo_4.innerHTML = data[3].capo;
+        nome_capo_5.innerHTML = data[4].capo;
+
+        prezzo_pieno_1.innerHTML = '€ ' + Cardigan.prezzoivainclusa;
+        prezzo_pieno_2.innerHTML = '€ ' + Maglietta.prezzoivainclusa;
+        prezzo_pieno_3.innerHTML = '€ ' + Felpa.prezzoivainclusa;
+        prezzo_pieno_4.innerHTML = '€ ' + Maglione.prezzoivainclusa;
+        prezzo_pieno_5.innerHTML = '€ ' + Maglia.prezzoivainclusa;
+
+        prezzo_scontato_1.innerHTML = '€ ' + Cardigan.getAcquistoCapo();
+        prezzo_scontato_2.innerHTML = '€ ' + Maglietta.getAcquistoCapo();
+        prezzo_scontato_3.innerHTML = '€ ' + Felpa.getAcquistoCapo();
+        prezzo_scontato_4.innerHTML = '€ ' + Maglione.getAcquistoCapo();
+        prezzo_scontato_5.innerHTML = '€ ' + Maglia.getAcquistoCapo();
+
     });
