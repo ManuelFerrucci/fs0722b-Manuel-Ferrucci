@@ -74,7 +74,14 @@ giuseppe.chiamata(4);
 giuseppe.getNumeroChiamate();
 console.log(giuseppe);
 
-//COMPILAZIONE HTML
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////    COMPILAZIONE HTML   /////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+
 
 let arrayUtenti: any[] = [daniel, dino, giuseppe];
 for (let i = 0; i < arrayUtenti.length; i++) {
@@ -109,15 +116,13 @@ for (let i = 0; i < arrayUtenti.length; i++) {
                         <input type="text" placeholder="Quanto ricarichi?" class="col-7 ricarica-valore" id="${arrayUtenti[i].nome}-ricarica-valore">
                         <button class="col-5 ricarica-bottone" id="${arrayUtenti[i].nome}-ricarica">Effettua Ricarica</button>
                     </div>
-                    <div class="row w-100">
-                        <input type="text" placeholder="Quanto dura la chiamata?"class="col-9 chiamata-durata" id="${arrayUtenti[i].nome}-durata-chiamata">
-                        <button class="col-3 chiamata-bottone" id="${arrayUtenti[i].nome}-chiama">Chiama</button>
-                    </div>
                 </div>
             </div>`
 }
 
-////// FUNZIONI ///////
+////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////    FUNZIONI     //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 
 let danielCaricaSoldi = <HTMLParagraphElement>document.querySelector('#Daniel-carica-soldi');
 let valoreRicaricaDaniel = <HTMLInputElement>document.querySelector('#Daniel-ricarica-valore');
