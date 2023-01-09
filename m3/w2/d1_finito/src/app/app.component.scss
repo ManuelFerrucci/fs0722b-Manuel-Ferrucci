@@ -1,0 +1,12 @@
+.container {
+  transition: 2.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  h4 {
+    color: yellow;
+  }
+
+  &:hover {
+    background-color: rgba(0, 128, 0, 0.7) !important;
+    box-shadow: 2px 2px 20px 7px rgba(0, 0, 0, 0.6);
+    transform: translateY(100px) rotate(360deg);
+  }
+}
