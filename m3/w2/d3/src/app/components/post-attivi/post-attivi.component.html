@@ -1,0 +1,11 @@
+<div *ngFor="let post of postAttivi" [ngClass]="{'bg-warning': post.type =='news', 'bg-info': post.type =='education', 'bg-dark': post.type ==' politic', 'text-white': post.type ==' politic'}"
+  class="card w-25">
+  <div class="card-header">
+    <h2>Post</h2>
+  </div>
+  <div class="card-body">
+    <h3>{{post.title}}</h3>
+    <p>{{post.body}}</p>
+    <button type="button" (click)="changeStatus(post.id)">Ciao</button>
+  </div>
+</div>
