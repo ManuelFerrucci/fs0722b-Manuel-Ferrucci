@@ -29,14 +29,19 @@ export class DaFareComponent implements OnInit {
     ngOnChange(): void {}
 
     async aggiungi() {
-        const todoMom: Todo = {
-            id: 1,
-            title: this.nuovoToDo,
-            completed: false,
-        };
-        console.log(this.nuovoToDo);
-        this.td.add(todoMom);
-        this.prova();
+        if (this.nuovoToDo.trim() != '') {
+            const todoMom: Todo = {
+                id: 1,
+                title: this.nuovoToDo,
+                completed: false,
+            };
+            console.log(this.nuovoToDo);
+            this.td.add(todoMom);
+            this.prova();
+            this.nuovoToDo = '';
+        } else {
+            this.nuovoToDo = '';
+        }
     }
 
     async aggiorna(id: number) {
