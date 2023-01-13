@@ -1,0 +1,14 @@
+<div class="contenitore_contenuti">
+    <div class="contenitore text-center mt-5 p-4 rounded-3" [(ngModel)]="nuovoToDo">
+        <h1 class="fw-bold mb-3">Cose completate:</h1>
+        <div class="nessun_task" *ngIf="controllo==true && toDoListNew.length==0">
+            <p>Nessun elemento trovato!</p>
+        </div>
+        <div *ngIf="controllo && toDoListNew.length > 0">
+            <div class="risultato_completati" *ngFor="let todooo of toDoListNew">
+                <p class="mb-0 bg-success text-start text-white ps-4 pe-4 rounded-2">{{todooo.title}}</p><button class="bottone_elimina btn bg-danger" title="Elimina dalla lista" (click)="elimina(todooo.id)">✗</button>
+            </div>
+        </div>
+    </div>
+    <button class="torna_home btn btn-success" type="button" [routerLink]="'/home'">Torna alla home</button>
+</div>

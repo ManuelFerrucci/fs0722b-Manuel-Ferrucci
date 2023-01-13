@@ -1,0 +1,24 @@
+<div class="contenitore_contenuti">
+    <div class="contenitore text-center mt-5 p-4 rounded-3">
+        <h1 class="fw-bold mb-3">Cosa devi fare?</h1>
+        <div class="contenitore_input">
+            <input type="text" placeholder="Inizia a scrivere..." id="input" class="rounded-2" [(ngModel)]="nuovoToDo">
+            <button type="button" id="btn_input" class="btn btn-outline-success" (click)="aggiungi()">Aggiungi</button>
+        </div>
+        <div class="recupero_task" *ngIf="controllo==false">
+            <p>Recupero lista...</p>
+        </div>
+        <div class="nessun_task" *ngIf="controllo && toDoListNew.length==0">
+            <p>Nessun elemento trovato!</p>
+        </div>
+        <div class="contenitore_risultati" *ngIf="controllo && toDoListNew.length > 0">
+            <div class="container risultati" *ngFor="let todooo of toDoListNew">
+                <p class="mb-0 bg-warning text-start ps-4 pe-4 rounded-2">{{todooo.title}}</p>
+                <button class="bottone_aggiorna btn bg-success" title="Contrassegna come completato" (click)="aggiorna(todooo.id)">✓</button>
+                <button class="bottone_elimina btn bg-danger" title="Elimina dalla lista" (click)="elimina(todooo.id)">✗</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="torna_home btn btn-success" type="button" [routerLink]="'/home'">Torna alla home</button>
+</div>
