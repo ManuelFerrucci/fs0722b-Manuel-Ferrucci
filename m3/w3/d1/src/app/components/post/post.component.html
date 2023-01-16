@@ -1,0 +1,13 @@
+<div *ngIf="finito==false" class="d-flex">
+    <div class="dot-loader"></div>
+    <div class="dot-loader"></div>
+    <div class="dot-loader"></div>
+</div>
+<div *ngIf="finito==true"></div>
+<div class="mx-5 mt-5 row" *ngFor="let unaFoto of foto">
+    <div style="width: 350px; height: 350px;">
+        <img src="{{unaFoto.thumbnailUrl}}" class="w-100">
+        <button type="button" class="btn btn-danger mt-2">Elimina</button>
+        <button type="button" class="btn btn-primary mt-2 ms-2">Mi piace</button>
+    </div>
+</div>
