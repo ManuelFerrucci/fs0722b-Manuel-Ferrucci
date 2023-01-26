@@ -155,9 +155,9 @@ input::-webkit-inner-spin-button {
 }
 
 .freccia_in_basso {
-    position: fixed;
-    bottom: 18vh;
-    right: 15px;
+    position: sticky;
+    bottom: 20vh;
+    left: 20px;
 }
 
 #freccia_giu {
