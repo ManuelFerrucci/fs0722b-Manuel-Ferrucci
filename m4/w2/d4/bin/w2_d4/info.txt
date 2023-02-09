@@ -1,0 +1,24 @@
+
+
+
+Esercizio #1
+
+Ottenere una lista di prodotti che appartengono alla categoria «Books» ed hanno un prezzo > 100
+
+
+
+Esercizio #2
+
+Ottenere una lista di ordini con prodotti che appartengono alla categoria «Baby»
+
+
+
+Esercizio #3
+
+Ottenere una lista di prodotti che appartengono alla categoria «Boys» ed applicare 10% di sconto al loro prezzo
+
+
+
+Esercizio #4
+
+Ottenere una lista di prodotti ordinati da clienti di livello (tier) 2 tra l’01-Feb-2021 e l’01-Apr-2021
