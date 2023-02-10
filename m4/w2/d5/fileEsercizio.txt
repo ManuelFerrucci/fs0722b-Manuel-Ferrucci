@@ -1,0 +1,7 @@
+[codiceISBN=9798733089232, titolo=Il tennis italiano - n.1137, annoPubblicazione=2022, numeroPagine=73, periodicita=MENSILE]
+[codiceISBN=8806229729, titolo=Open - La mia storia, annoPubblicazione=2009, numeroPagine=502, autore=Andre Agassi, genere=autobiografico]
+[codiceISBN=9770397837347, titolo=Focus - n.120, annoPubblicazione=2002, numeroPagine=87, periodicita=MENSILE]
+[codiceISBN=8867766511, titolo=Il dio della racchetta, annoPubblicazione=2017, numeroPagine=136, autore=Simone Fornara, genere=sport]
+[codiceISBN=8340712832023, titolo=La settimana enigmistica - n.4742, annoPubblicazione=2023, numeroPagine=44, periodicita=SETTIMANALE]
+[codiceISBN=8806210920, titolo=Il tennis come esperienza religiosa, annoPubblicazione=2017, numeroPagine=96, autore=David Foster Wallace, genere=sport]
+[codiceISBN=880985643540, titolo=Segnaposto, annoPubblicazione=DuemilaMAI, numeroPagine=49, periodicita=SEMESTRALE]
