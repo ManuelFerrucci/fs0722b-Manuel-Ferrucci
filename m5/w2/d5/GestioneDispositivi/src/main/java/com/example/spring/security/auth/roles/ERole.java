@@ -1,5 +1,7 @@
 package com.example.spring.security.auth.roles;
 
 public enum ERole {
-	AMMINISTRATORE, DIPENDENTE
+	ROLE_USER,
+    ROLE_ADMIN,
+    ROLE_MODERATOR;
 }
