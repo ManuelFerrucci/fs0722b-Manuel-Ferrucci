@@ -1,0 +1,49 @@
+#contenitore_titolo_pulsanti {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h1 {
+        margin: 20px 0;
+        font-size: 2.3rem;
+    }
+
+    #contenitore_pulsanti {
+        .button {
+            margin: 0 20px;
+            font-size: 1.5rem;
+            background-color: lightcyan;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+            transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+            &:hover {
+                background-color: lightgreen;
+            }
+        }
+    }
+}
+
+#contenitore_lista {
+    width: 95%;
+
+    p {
+        padding: 20px 10px;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+    .infoIncendio {
+        padding-bottom: 20px;
+
+        p {
+            padding: 0 10px;
+        }
+    }
+}
